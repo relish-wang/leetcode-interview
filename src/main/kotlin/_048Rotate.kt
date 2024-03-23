@@ -18,9 +18,9 @@ fun main() {
 //        intArrayOf(4, 5, 6),
 //        intArrayOf(7, 8, 9)
 //    )
-    println(toString(a))
+    println(a.toStr())
     rotate(a)
-    println(toString(a))
+    println(a.toStr())
 }
 
 
@@ -72,10 +72,10 @@ fun rotate(matrix: Array<IntArray>): Unit {
     }
 }
 
-fun toString(a: Array<IntArray>) {
-    for (i in 0 until a.size) {
-        for (j in 0 until a[i].size) {
-            print(String.format("%3d ", a[i][j]))
+fun Array<IntArray>.toStr() {
+    for (i in 0 until this.size) {
+        for (j in 0 until this[i].size) {
+            print(String.format("%3d ", this[i][j]))
         }
         println()
     }
