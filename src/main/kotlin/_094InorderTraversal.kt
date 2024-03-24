@@ -1,0 +1,23 @@
+import stucture.TreeNode
+
+fun main() {
+    var node = TreeNode.createTestData("[1,null,2,3]")
+    TreeNode.print(node)
+
+    println(inorderTraversal(node).toTypedArray().contentToString())
+}
+
+fun inorderTraversal(root: TreeNode?): List<Int> {
+    val ans = mutableListOf<Int>()
+    dfs(root, ans)
+    return ans
+}
+
+fun dfs(node: TreeNode?, list: MutableList<Int>) {
+    if (node == null) {
+        return
+    }
+    dfs(node.left, list)
+    list.add(node.`val`)
+    dfs(node.right, list)
+}
