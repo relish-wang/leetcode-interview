@@ -42,7 +42,7 @@ fun minDistance(word1: String, word2: String): Int {
     return dp[l1][l2]
 }
 
-fun min(a: Int, b: Int, c: Int): Int {
+private fun min(a: Int, b: Int, c: Int): Int {
     return if (a > b) {
         if (b > c) c else b
     } else {
