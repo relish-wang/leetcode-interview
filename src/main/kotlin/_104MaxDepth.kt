@@ -16,7 +16,7 @@ fun maxDepth(root: TreeNode?): Int {
 }
 
 /**
- * 递归
+ * 深度优先搜索
  */
 fun dfs(root: TreeNode?, level: Int): Int {
     if (root == null) return level
