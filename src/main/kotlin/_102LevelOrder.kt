@@ -24,6 +24,7 @@ fun lo(root: TreeNode?, level: Int) {
 
 fun List<List<Int>>.print() {
     val c = this.size
+    //println(Array<IntArray>(c) { IntArray(this[it].size) { y -> this[it][y] } }.contentToString())
     for (i in 0 until c) {
         for (j in 0 until this[i].size) {
             print("${this[i][j]} ")
