@@ -1,3 +1,5 @@
+import java.util.*
+
 class ListNode(var `val`: Int) {
     var next: ListNode? = null
     override fun toString(): String {
@@ -43,34 +45,41 @@ class TreeNode(var `val`: Int) {
         /**
          * 创建测试数据
          *
-         * @param data [XX,XX,null,xx]
+         * @param str [XX,XX,null,xx]
          * @return [TreeNode]
          */
-        fun createTestData(data: String): TreeNode? {
-            var data = data
+        fun createTestData(str: String): TreeNode? {
+            var data = str
             if (data == "[]") return null
             data = data.substring(1, data.length - 1)
             val split = data.split(",")
-            val len = split.size
-            val treeNodes = arrayOfNulls<TreeNode>(len)
-            for (i in 0 until len) {
-                if (split[i] != "null") {
-                    treeNodes[i] = TreeNode(split[i].toInt())
+            val qLow = LinkedList<Int?>()
+            for (i in split.indices) {
+                split[i].let {
+                    qLow.offer(
+                        if (it == "null") {
+                            null
+                        } else {
+                            it.toInt()
+                        }
+                    )
                 }
             }
-            for (i in 0 until len) {
-                if (treeNodes[i] != null) {
-                    val leftIndex = i * 2 + 1
-                    if (leftIndex < len) {
-                        treeNodes[i]!!.left = treeNodes[leftIndex]
-                    }
-                    val rightIndex = leftIndex + 1
-                    if (rightIndex < len) {
-                        treeNodes[i]!!.right = treeNodes[rightIndex]
-                    }
-                }
+            val qHigh = LinkedList<TreeNode?>()
+            if (qLow.isEmpty()) {
+                return null
             }
-            return treeNodes[0]
+            val rv = qLow.poll() ?: return null
+            val root = TreeNode(rv)
+            qHigh.offer(root)
+            while (qHigh.isNotEmpty()) {
+                val r = qHigh.poll() ?: continue
+                val left = (qLow.poll()?.let { TreeNode(it) }).also { qHigh.offer(it) }
+                val right = (qLow.poll()?.let { TreeNode(it) }).also { qHigh.offer(it) }
+                r.left = left
+                r.right = right
+            }
+            return root
         }
 
         private const val space = "      "
