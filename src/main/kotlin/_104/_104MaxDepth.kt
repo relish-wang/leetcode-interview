@@ -1,6 +1,6 @@
 package _104
 
-import _094.TreeNode
+import TreeNode
 import java.util.*
 import kotlin.math.max
 

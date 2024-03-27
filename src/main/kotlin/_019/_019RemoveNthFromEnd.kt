@@ -1,6 +1,6 @@
 package _019
 
-import _002.ListNode
+import ListNode
 
 fun main() {
     println(removeNthFromEnd(ListNode.newInstance(intArrayOf(1,2,3,4,5)), 5))

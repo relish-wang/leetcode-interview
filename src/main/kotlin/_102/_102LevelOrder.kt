@@ -1,6 +1,6 @@
 package _102
 
-import _094.TreeNode
+import TreeNode
 
 fun main() {
     val node = TreeNode.createTestData("[3,9,20,null,null,15,7]")

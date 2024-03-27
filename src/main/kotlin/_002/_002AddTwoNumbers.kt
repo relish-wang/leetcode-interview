@@ -1,5 +1,7 @@
 package _002
 
+import ListNode
+
 /**
  * Example:
  * var li = ListNode(5)
@@ -41,39 +43,6 @@ fun addTwoNumbers(l1: ListNode?, l2: ListNode?): ListNode? {
     return head
 }
 
-class ListNode(var `val`: Int) {
-    var next: ListNode? = null
-
-    override fun toString(): String {
-        val r = mutableListOf<Int>()
-        var n: ListNode? = this
-        while (n != null) {
-            r.add(n.`val`)
-            n = n.next
-        }
-        return r.toIntArray().contentToString()
-    }
-
-    companion object {
-        fun newInstance(arr: IntArray): ListNode? {
-            var n: ListNode? = null
-            var h: ListNode? = null
-            for (i in arr) {
-                val t = ListNode(i)
-                if (h == null) {
-                    h = t
-                }
-                if (n == null) {
-                    n = t
-                } else {
-                    n.next = t
-                    n = t
-                }
-            }
-            return h
-        }
-    }
-}
 
 fun main() {
     val node = addTwoNumbers(ListNode.newInstance(intArrayOf(2, 4, 3)), ListNode.newInstance(intArrayOf(5, 6, 4)))

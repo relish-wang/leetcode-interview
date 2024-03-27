@@ -1,6 +1,6 @@
 package _105
 
-import _094.TreeNode
+import TreeNode
 
 fun main() {
     val tree = buildTree(intArrayOf(3, 9, 20, 15, 7), intArrayOf(9, 3, 15, 20, 7))

@@ -1,6 +1,6 @@
 package _103
 
-import _094.TreeNode
+import TreeNode
 import _102.print
 
 fun main() {

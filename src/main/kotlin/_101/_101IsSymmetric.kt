@@ -1,6 +1,6 @@
 package _101
 
-import _094.TreeNode
+import TreeNode
 
 fun main() {
 //    println(isSymmetric(TreeNode.createTestData("[1,2,2,3,4,4,3]").also { TreeNode.print(it) }))

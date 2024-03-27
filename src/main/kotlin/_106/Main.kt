@@ -1,6 +1,6 @@
 package _106
 
-import _094.TreeNode
+import TreeNode
 
 /**
  * Example:

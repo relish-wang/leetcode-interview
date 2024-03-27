@@ -1,6 +1,6 @@
 package _021
 
-import _002.ListNode
+import ListNode
 
 fun main() {
     println(mergeTwoLists(ListNode.newInstance(intArrayOf(1, 2, 4)), ListNode.newInstance(intArrayOf(1, 3, 4))))
