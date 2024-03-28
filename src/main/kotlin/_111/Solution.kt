@@ -14,6 +14,9 @@ import kotlin.math.min
  * }
  */
 class Solution {
+    /**
+     * bfs(广度优先遍历)更好,可以在找到第一个叶子节点的时候return, 而不需要遍历完整个树
+     */
     fun minDepth(root: TreeNode?): Int {
         return md(root, 0)
     }
