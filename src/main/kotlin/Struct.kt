@@ -1,15 +1,37 @@
 import java.util.*
 
-class ListNode(var `val`: Int) {
+class ListNode @JvmOverloads constructor(
+    val `val`: Int,
+) {
+    var isLoopNode: Boolean = false
     var next: ListNode? = null
     override fun toString(): String {
         val r = mutableListOf<Int>()
         var n: ListNode? = this
+        var meetloop = 0
+        var i = 0
+        var loopValue = -1
+        var loopIndex = -1
         while (n != null) {
+            if (n.isLoopNode) {
+                meetloop++
+                if (meetloop == 1) {
+                    loopValue = n.`val`
+                    loopIndex = i
+                } else if (meetloop >= 2) {
+                    break
+                }
+            }
             r.add(n.`val`)
             n = n.next
+            i++
         }
-        return r.toIntArray().contentToString()
+        val ans = r.toIntArray().contentToString()
+        return if (loopIndex == -1) {
+            ans
+        } else {
+            "$ans, 环入口在第【${loopIndex}】个节点其值为【${loopValue}】"
+        }
     }
 
     companion object {
@@ -25,6 +47,31 @@ class ListNode(var `val`: Int) {
                     n = t
                 } else {
                     n.next = t
+                    n = t
+                }
+            }
+            return h
+        }
+
+        fun withLoop(arr: IntArray, index: Int): ListNode? {
+            var n: ListNode? = null
+            var h: ListNode? = null
+            var loopEntrance: ListNode? = null
+            for (i in arr.indices) {
+                val t = ListNode(arr[i])
+                if (h == null) {
+                    h = t
+                }
+                if (n == null) {
+                    n = t
+                } else {
+                    n.next = t
+                    if (i - 1 == index) {
+                        loopEntrance = n.apply { isLoopNode = true }
+                    }
+                    if (i == arr.size - 1) {
+                        t.next = loopEntrance
+                    }
                     n = t
                 }
             }
