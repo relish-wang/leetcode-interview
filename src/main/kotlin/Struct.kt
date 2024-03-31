@@ -1,7 +1,7 @@
 import java.util.*
 
 class ListNode @JvmOverloads constructor(
-    val `val`: Int,
+    var `val`: Int,
 ) {
     var isLoopNode: Boolean = false
     var next: ListNode? = null
