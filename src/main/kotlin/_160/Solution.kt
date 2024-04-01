@@ -14,6 +14,9 @@ import java.util.*
  * https://leetcode.cn/problems/intersection-of-two-linked-lists/?envType=featured-list&envId=Fw9n57OM?envType=featured-list&envId=Fw9n57OM
  */
 class Solution {
+    /**
+     * 题解牛逼, 指针A走链表A,走完接着走B;指针B走链表B,走完接着走A。以此消除长度差, 当二者都走完时, 如果两者相交此时两个指针都指向了交点; 否则都指向了null。如果两者长度相同, 则提前返回交点。
+     */
     fun getIntersectionNode(headA: ListNode?, headB: ListNode?): ListNode? {
         val stackA = fillStack(headA)
         val stackB = fillStack(headB)
@@ -45,7 +48,7 @@ class Solution {
 
 fun main() {
     val headC = ListNode.newInstance(intArrayOf(8, 4, 5))
-    val headA = ListNode.newInstanceWithTail(intArrayOf(4, 1), headC)
+    val headA = ListNode.newInstanceWithTail(intArrayOf(4, 1, 2), headC)
     val headB = ListNode.newInstanceWithTail(intArrayOf(5, 6, 1), headC)
     println(Solution().getIntersectionNode(headA, headB))
 }
