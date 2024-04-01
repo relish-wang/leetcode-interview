@@ -37,7 +37,8 @@ class Solution {
         }
         return h
     }
-    fun reverseList(head: ListNode?): ListNode? {
+
+    fun reverseList2(head: ListNode?): ListNode? {
         return reverseList(head, null)
     }
 
@@ -59,6 +60,24 @@ class Solution {
         val next = head.next // 提前取出来
         head.next = tail
         return reverseList(next, head)
+    }
+
+    /**
+     * 用什么栈呐 庸俗
+     */
+    fun reverseList(head: ListNode?): ListNode? {
+        if (head == null) {
+            return null
+        }
+        var cur = head
+        var pre: ListNode? = null
+        while (cur != null) {
+            val nex = cur.next
+            cur.next = pre
+            pre = cur
+            cur = nex
+        }
+        return pre
     }
 }
 
