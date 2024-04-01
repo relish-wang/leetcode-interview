@@ -1,3 +1,5 @@
+import ClassExecutor.Companion.parseArrayOfIntArray
+
 /**
  * 双指针
  * https://leetcode.cn/problems/lru-cache/?envType=featured-list&envId=Fw9n57OM?envType=featured-list&envId=Fw9n57OM
@@ -42,14 +44,4 @@ fun main() {
             parseArrayOfIntArray("[[2], [1, 1], [2, 2], [1], [3, 3], [2], [4, 4], [1], [3], [4]]")
         )
     )
-}
-
-fun parseArrayOfIntArray(raw: String): Array<Array<*>> {
-    val arr = raw.substring(2, raw.length - 2).split("], [")
-    val n = arr.size
-    return Array(n) { i ->
-        arr[i].split(", ").map {
-            it.trim().toInt()
-        }.toTypedArray()
-    }
 }
