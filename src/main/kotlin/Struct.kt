@@ -35,7 +35,13 @@ class ListNode @JvmOverloads constructor(
     }
 
     companion object {
+
+
         fun newInstance(arr: IntArray): ListNode? {
+            return newInstanceWithTail(arr, null)
+        }
+
+        fun newInstanceWithTail(arr: IntArray, tail: ListNode?): ListNode? {
             var n: ListNode? = null
             var h: ListNode? = null
             for (i in arr) {
@@ -50,6 +56,7 @@ class ListNode @JvmOverloads constructor(
                     n = t
                 }
             }
+            n?.next = tail
             return h
         }
 
