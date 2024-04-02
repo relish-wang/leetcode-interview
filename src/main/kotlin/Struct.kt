@@ -173,5 +173,18 @@ class TreeNode(var `val`: Int) {
             }
             println(res)
         }
+
+        /**
+         * 要求每个节点的值都不一样
+         */
+        fun TreeNode?.findChildTree(target: Int): TreeNode? {
+            if (this == null) {
+                return null
+            }
+            if (this.`val` == target) {
+                return this
+            }
+            return left?.findChildTree(target) ?: right?.findChildTree(target)
+        }
     }
 }
