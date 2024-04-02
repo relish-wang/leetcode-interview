@@ -2,11 +2,33 @@ package _215
 
 class Solution {
     /**
-     * 堆排序
+     * 大根堆排序
      */
-    fun findKthLargest3(nums: IntArray, k: Int): Int {
-        // TODO
-        return -1
+    fun findKthLargest(nums: IntArray, k: Int): Int {
+        val n = nums.size
+        for (i in n / 2 downTo 0) {
+            heapSort(nums, i, n)
+        }
+        for (i in n - 1 downTo n - k + 1) {
+            swap(nums, 0, i) // 堆顶是最大元素, 移动到最后去
+            heapSort(nums, 0, i)
+        }
+        return nums[0]
+    }
+
+    fun heapSort(arr: IntArray, index: Int, size: Int) {
+        val left = (index shl 1) + 1
+        var s = index
+        if (left < size && arr[left] > arr[s]) {
+            s = left
+        }
+        val right = left + 1
+        if (right < size && arr[right] > arr[s]) {
+            s = right
+        }
+        if (s == index) return
+        swap(arr, index, s)
+        heapSort(arr, s, size)
     }
 
     /**
@@ -14,7 +36,7 @@ class Solution {
      * 用时: 94.64%
      * 内存: 57.14%
      */
-    fun findKthLargest(nums: IntArray, k: Int): Int {
+    fun findKthLargestQS(nums: IntArray, k: Int): Int {
         return qs(nums, 0, nums.size - 1, k)
     }
 
