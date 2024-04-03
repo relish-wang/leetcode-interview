@@ -1,6 +1,9 @@
 package _136
 
 class Solution {
+    /**
+     * 一个数异或自己等于0
+     */
     fun singleNumber(nums: IntArray): Int {
         var ans = 0
         for (n in nums) ans = ans xor n
