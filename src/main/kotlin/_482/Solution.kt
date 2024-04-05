@@ -2,8 +2,6 @@ package _482
 
 import int2d
 import java.util.*
-import kotlin.math.max
-import kotlin.math.min
 
 /**
  * https://leetcode.cn/problems/minimum-number-of-arrows-to-burst-balloons/?envType=featured-list&envId=Fw9n57OM?envType=featured-list&envId=Fw9n57OM
