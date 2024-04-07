@@ -46,7 +46,7 @@ class FooBar {
 
 
     public static void main(String[] args) throws RuntimeException{
-        final FB fooBar = new FB(2);
+        final FooBar fooBar = new FooBar(2);
         new Thread(() -> {
             try {
                 fooBar.foo(()-> System.out.print("foo"));
