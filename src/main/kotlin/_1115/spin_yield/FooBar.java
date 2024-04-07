@@ -1,4 +1,4 @@
-package _1115;
+package _1115.spin_yield;
 /**
  * https://leetcode.cn/problems/print-foobar-alternately/solutions/542996/duo-xian-cheng-liu-mai-shen-jian-ni-xue-d220n/?envType=featured-list&envId=Fw9n57OM?envType=featured-list&envId=Fw9n57OM
  * 1 LinkedBlockingQueue

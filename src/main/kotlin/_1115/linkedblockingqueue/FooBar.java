@@ -1,4 +1,7 @@
-package _1115;
+package _1115.linkedblockingqueue;
+
+import java.util.concurrent.LinkedBlockingQueue;
+
 /**
  * https://leetcode.cn/problems/print-foobar-alternately/solutions/542996/duo-xian-cheng-liu-mai-shen-jian-ni-xue-d220n/?envType=featured-list&envId=Fw9n57OM?envType=featured-list&envId=Fw9n57OM
  * 1 LinkedBlockingQueue
@@ -12,6 +15,8 @@ package _1115;
  */
 class FooBar {
     private int n;
+    private final LinkedBlockingQueue<Integer> foo = new LinkedBlockingQueue<>(1);
+    private final LinkedBlockingQueue<Integer> bar = new LinkedBlockingQueue<>(1);
 
     public FooBar(int n) {
         this.n = n;
@@ -22,7 +27,9 @@ class FooBar {
         for (int i = 0; i < n; i++) {
             
         	// printFoo.run() outputs "foo". Do not change or remove this line.
-        	printFoo.run();
+            foo.put(i);// 容量为1, 上一个未消费(即take)的话, 就会阻塞在这里
+        	printFoo.run(); // 打印foo
+            bar.put(i); // 此时阻塞, 直到printBar.run()后面的那句bar.take()执行, 就是说bar打印后, 这里才开始往后执行。
         }
     }
 
@@ -31,9 +38,14 @@ class FooBar {
         for (int i = 0; i < n; i++) {
             
             // printBar.run() outputs "bar". Do not change or remove this line.
-        	printBar.run();
+            foo.take(); // 如果foo为空, 则会等阻塞直到, foo.put()
+        	printBar.run(); // 打印"bar"
+            bar.take(); // 如果bar为空, 则会等阻塞直到, bar.put()
         }
     }
+
+
+
     public static void main(String[] args) throws RuntimeException{
         final FooBar fooBar = new FooBar(4);
         new Thread(() -> {
@@ -52,3 +64,4 @@ class FooBar {
         }).start();
     }
 }
+

@@ -1,4 +1,5 @@
-package _1115;
+package _1115.nolock;
+
 /**
  * https://leetcode.cn/problems/print-foobar-alternately/solutions/542996/duo-xian-cheng-liu-mai-shen-jian-ni-xue-d220n/?envType=featured-list&envId=Fw9n57OM?envType=featured-list&envId=Fw9n57OM
  * 1 LinkedBlockingQueue
@@ -8,10 +9,11 @@ package _1115;
  * 5 synchronized + 标志位 + 唤醒
  * 6 信号量 Semaphore
  * 7 wait() + notifyAll()
- * 8 无锁
+ * 【8】 无锁 // 打印5个会超时
  */
 class FooBar {
     private int n;
+    private volatile boolean canPrintBar = false;
 
     public FooBar(int n) {
         this.n = n;
@@ -22,7 +24,9 @@ class FooBar {
         for (int i = 0; i < n; i++) {
             
         	// printFoo.run() outputs "foo". Do not change or remove this line.
+            while (canPrintBar){}
         	printFoo.run();
+            canPrintBar = true;
         }
     }
 
@@ -31,11 +35,13 @@ class FooBar {
         for (int i = 0; i < n; i++) {
             
             // printBar.run() outputs "bar". Do not change or remove this line.
+            while (!canPrintBar){}
         	printBar.run();
+            canPrintBar = false;
         }
     }
     public static void main(String[] args) throws RuntimeException{
-        final FooBar fooBar = new FooBar(4);
+        final FooBar fooBar = new FooBar(5);
         new Thread(() -> {
             try {
                 fooBar.bar(()-> System.out.print("bar"));
