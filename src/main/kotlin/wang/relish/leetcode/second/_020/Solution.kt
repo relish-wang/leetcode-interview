@@ -1,28 +1,39 @@
 package wang.relish.leetcode.second._020
 
-import java.util.*
+import java.util.Stack
+
 
 class Solution {
     fun isValid(s: String): Boolean {
-        val stack = Stack<Char>()
-        for (c in s) {
-            if (c == '{' || c == '(' || c == '[') stack.push(c)
-            else {
-                if (c == '}') {
-                    if (stack.isEmpty() || stack.pop() != '{') {
-                        return false
+        val st = Stack<Char>()
+        for (i in 0 until s.length) {
+            if (s[i] in arrayOf('{', '[', '(')) {
+                st.push(s[i])
+            } else {
+                if (st.isEmpty()) {
+                    return false
+                }
+                when (s[i]) {
+                    '}' -> {
+                        if (st.pop() != '{') {
+                            return false
+                        }
                     }
-                } else if (c == ')') {
-                    if (stack.isEmpty() || stack.pop() != '(') {
-                        return false
+
+                    ']' -> {
+                        if (st.pop() != '[') {
+                            return false
+                        }
                     }
-                } else {
-                    if (stack.isEmpty() || stack.pop() != '[') {
-                        return false
+
+                    ')' -> {
+                        if (st.pop() != '(') {
+                            return false
+                        }
                     }
                 }
             }
         }
-        return stack.isEmpty()
+        return st.isEmpty()
     }
 }
