@@ -16,6 +16,7 @@
 | [0048][0048] | 旋转图像                  | 中等 | 54:46 | ⚠️ 虽然还是自己做出来了, 但坐标转化弱项。多练                                                      |
 | [0053][0053] | 最大子数组和                | 中等 | 15:18 | ⚠️ 动态规划,多练, 可以把dp数组去掉用一个变量代替                                                   |
 | [0055][0055] | 跳跃游戏                  | 中等 | 11:29 | ⚠️ 哈希表存前期结果减少用时, 但还是O(n), 其实有更好的解法(记录能跳到的最远距离, 当遍历的i大于最远距离, 则false), 最坏情况才O(n) |
+| [0056][0056] | 合并区间                  | 中等 | 38:33 | ⚠️ 太久, 思路捋清楚, 先排序怎么排                                                           |
 
 [0001]: https://leetcode.cn/problems/two-sum/description/?envType=featured-list&envId=Fw9n57OM?envType=featured-list&envId=Fw9n57OM
 
@@ -51,7 +52,8 @@
 
 [0055]: https://leetcode.cn/problems/jump-game/description/?envType=featured-list&envId=Fw9n57OM?envType=featured-list&envId=Fw9n57OM
 
-[0056]:
+[0056]: https://leetcode.cn/problems/merge-intervals/description/?envType=featured-list&envId=Fw9n57OM?envType=featured-list&envId=Fw9n57OM
+
 [0062]:
 
 [0064]:
