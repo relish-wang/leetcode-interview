@@ -11,6 +11,7 @@
 | [0021][0021] |          合并两个有序链表 | 简单 | 7:33  |                               快的 |
 | [0022][0022] |          括号生成 | 中等 | 9:57  | ⚠️ 没有去重,用set去重的。理解一下dfs、回溯,再做一遍。 |
 | [0033][0033] |          搜索旋转排序数组 | 中等 | 18:40 |                ⚠️ 二分法、考虑是否递增, 稍慢 |
+| [0034][0034] |          在排序数组中查找元素的第一个和最后一个位置 | 中等 | 7:48  |                 |
 
 [0001]: https://leetcode.cn/problems/two-sum/description/?envType=featured-list&envId=Fw9n57OM?envType=featured-list&envId=Fw9n57OM
 
