@@ -5,25 +5,31 @@ import kotlin.math.max
 class Solution {
     fun longestPalindrome(s: String): String {
         val n = s.length
-        if (n < 2) return s
         var max = 1
-        var maxStr = s.substring(0, 1)
-        for (i in 0 until n - 1) {
+        var ans: String = s.substring(0, 1)
+        for (i in 0 until n-1) {
             val l1 = expand(s, i, i)
             val l2 = expand(s, i, i + 1)
             val l = max(l1, l2)
-            if (l > max) {
-                max = l
-                val start = i - (l - 1) / 2
-                maxStr = s.substring(start, start + max)
+            if (l <= max) continue
+            max = l
+            ans = if (l1 > l2) {
+                val b = (l1 - 1) / 2
+                s.substring(i - b, i + b + 1)
+            } else {
+                val b = l2 / 2
+                s.substring(i - b + 1, i + b + 1)
             }
         }
-        return maxStr
+        return ans
     }
 
-    private fun expand(s: String, left: Int, right: Int): Int {
+    fun expand(s: String, left: Int, right: Int): Int {
         var l = left
         var r = right
+        if (s[l] != s[r]) {
+            return r - l
+        }
         while (l >= 0 && r < s.length && s[l] == s[r]) {
             l--
             r++
@@ -33,7 +39,7 @@ class Solution {
 }
 
 fun main() {
-//    println(Solution().longestPalindrome("babad")) // bab
-//    println(Solution().longestPalindrome("cbbd")) // bb
-    println(Solution().longestPalindrome("bb")) // bb
+//    println(Solution().longestPalindrome("babad"))
+//    println(Solution().longestPalindrome("cbbd"))
+    println(Solution().longestPalindrome("bb"))
 }
