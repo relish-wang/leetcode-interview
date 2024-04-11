@@ -18,7 +18,8 @@
 | [0055][0055] | 跳跃游戏                  | 中等 | 11:29 | ⚠️ 哈希表存前期结果减少用时, 但还是O(n), 其实有更好的解法(记录能跳到的最远距离, 当遍历的i大于最远距离, 则false), 最坏情况才O(n) |
 | [0056][0056] | 合并区间                  | 中等 | 38:33 | ⚠️ 太久, 思路捋清楚, 先排序怎么排                                                           |
 | [0062][0062] | 不同路径                  | 中等 | 6:33  | 可优化,再说                                                                         |
-| [0064][0064] | 最小路径和                  | 中等 | 4:29  | 和上一题很像                                                                         |
+| [0064][0064] | 最小路径和                 | 中等 | 4:29  | 和上一题很像                                                                         |
+| [0070][0070] | 爬楼梯                   | 简单 | 3:11  | 斐波那契                                                                           |
 
 [0001]: https://leetcode.cn/problems/two-sum/description/?envType=featured-list&envId=Fw9n57OM?envType=featured-list&envId=Fw9n57OM
 
@@ -60,7 +61,7 @@
 
 [0064]: https://leetcode.cn/problems/minimum-path-sum/description/?envType=featured-list&envId=Fw9n57OM?envType=featured-list&envId=Fw9n57OM
 
-[0070]:
+[0070]: https://leetcode.cn/problems/climbing-stairs/description/?envType=featured-list&envId=Fw9n57OM?envType=featured-list&envId=Fw9n57OM
 
 [0072]:
 [0075]:
