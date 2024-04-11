@@ -17,6 +17,7 @@
 | [0053][0053] | 最大子数组和                | 中等 | 15:18 | ⚠️ 动态规划,多练, 可以把dp数组去掉用一个变量代替                                                   |
 | [0055][0055] | 跳跃游戏                  | 中等 | 11:29 | ⚠️ 哈希表存前期结果减少用时, 但还是O(n), 其实有更好的解法(记录能跳到的最远距离, 当遍历的i大于最远距离, 则false), 最坏情况才O(n) |
 | [0056][0056] | 合并区间                  | 中等 | 38:33 | ⚠️ 太久, 思路捋清楚, 先排序怎么排                                                           |
+| [0062][0062] | 不同路径                  | 中等 | 6:33  | 可优化,再说                                                                         |
 
 [0001]: https://leetcode.cn/problems/two-sum/description/?envType=featured-list&envId=Fw9n57OM?envType=featured-list&envId=Fw9n57OM
 
@@ -54,7 +55,7 @@
 
 [0056]: https://leetcode.cn/problems/merge-intervals/description/?envType=featured-list&envId=Fw9n57OM?envType=featured-list&envId=Fw9n57OM
 
-[0062]:
+[0062]: https://leetcode.cn/problems/unique-paths/description/?envType=featured-list&envId=Fw9n57OM?envType=featured-list&envId=Fw9n57OM
 
 [0064]:
 [0070]:
