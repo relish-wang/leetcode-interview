@@ -2,18 +2,17 @@ package wang.relish.leetcode.second._001
 
 class Solution {
     fun twoSum(nums: IntArray, target: Int): IntArray {
-        val map = mutableMapOf<Int, Int>()
-        for (i in nums.indices) {
-            if (map.containsKey(target - nums[i])) {
-                return intArrayOf(map[target - nums[i]]!!, i)
+        val map = hashMapOf<Int, Int>()
+        for ((index, num) in nums.withIndex()) {
+            if (map.containsKey(target - num)) {
+                return intArrayOf(index, map[target - num]!!)
             }
-            map[nums[i]] = i
+            map[num] = index
         }
-        return intArrayOf()
+        return intArrayOf(-1, -1)
     }
 }
 
 fun main() {
-    println(Solution().twoSum(intArrayOf(2, 7, 11, 15), 9).contentToString()) // [0,1]
-    println(Solution().twoSum(intArrayOf(3, 2, 4), 6).contentToString()) // [1,2]
+    println(Solution().twoSum(intArrayOf(), 0).contentToString()) //
 }
