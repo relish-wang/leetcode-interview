@@ -14,3 +14,13 @@ fun int2d(raw: String): Array<IntArray> {
         }
     }
 }
+
+fun Array<IntArray>.printSquare() {
+    for (i in indices) {
+        for (j in 0 until this[i].size) {
+            print(String.format("%3d ", this[i][j]))
+        }
+        println()
+    }
+    println()
+}
