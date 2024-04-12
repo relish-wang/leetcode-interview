@@ -2,27 +2,24 @@ package wang.relish.leetcode.second._022
 
 class Solution {
     fun generateParenthesis(n: Int): List<String> {
+        var ans = mutableListOf("()")
         if (n == 1) {
-            return listOf("()")
+            return ans
         }
-        var list: List<String> = listOf("()")
         for (i in 2..n) {
-            list = g(n, list)
+            ans = g(ans)
         }
-        return list
+        return ans
     }
 
-    fun g(n: Int, list: List<String>): List<String> {
-        if (n == 1) {
-            return listOf("()")
-        }
-        val ans = hashSetOf<String>()
+    fun g(list: List<String>): MutableList<String> {
+        val set = hashSetOf<String>()
         for (s in list) {
             for (i in s.indices) {
-                ans.add(s.substring(0, i) + "()" + s.substring(i))
+                set.add(s.substring(0, i) + "()" + s.substring(i))
             }
         }
-        return ArrayList(ans)
+        return ArrayList(set)
     }
 }
 
