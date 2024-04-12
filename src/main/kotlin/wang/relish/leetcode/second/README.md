@@ -20,6 +20,10 @@
 | [0062][0062] | 不同路径                  | 中等 | 6:33  | 可优化,再说                                                                         |
 | [0064][0064] | 最小路径和                 | 中等 | 4:29  | 和上一题很像                                                                         |
 | [0070][0070] | 爬楼梯                   | 简单 | 3:11  | 斐波那契                                                                           |
+| [0072][0072] | 编辑距离                  | 中等 | 3:11  | ⚠️还是要练。经典二维数组动态规划。@see [0712][0712]、[1143][1143] 建议三道一起刷                       |
+|              |                       |    |       |                                                                                |
+| [0712][0712] | 两个字符串的最小ASCII删除和      | 中等 |       | 经典二维数组动态规划。@see [0072][0072]、[1143][1143]  建议三道一起刷                             |
+| [1143][1143] | 最长公共子序列               | 中等 |       | 经典二维数组动态规划。@see [0072][0072]、[0712][0712]    建议三道一起刷                           |
 
 [0001]: https://leetcode.cn/problems/two-sum/description/?envType=featured-list&envId=Fw9n57OM?envType=featured-list&envId=Fw9n57OM
 
@@ -63,7 +67,8 @@
 
 [0070]: https://leetcode.cn/problems/climbing-stairs/description/?envType=featured-list&envId=Fw9n57OM?envType=featured-list&envId=Fw9n57OM
 
-[0072]:
+[0072]: https://leetcode.cn/problems/edit-distance/description/?envType=featured-list&envId=Fw9n57OM?envType=featured-list&envId=Fw9n57OM
+
 [0075]:
 
 [0078]:
@@ -141,10 +146,14 @@
 [0647]:
 [0695]:
 
+[0712]: https://leetcode.cn/problems/minimum-ascii-delete-sum-for-two-strings/description/
+
 [0889]:
 [1028]:
 
 [1115]:
 [LCR115]:
+
+[1143]: https://leetcode.cn/problems/longest-common-subsequence/description/
 
 
