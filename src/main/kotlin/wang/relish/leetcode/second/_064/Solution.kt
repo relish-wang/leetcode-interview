@@ -3,6 +3,9 @@ package wang.relish.leetcode.second._064
 import kotlin.math.min
 
 class Solution {
+    /**
+     * 最基础的二维动态规划
+     */
     fun minPathSum(grid: Array<IntArray>): Int {
         val m = grid.size
         val n = grid[0].size
