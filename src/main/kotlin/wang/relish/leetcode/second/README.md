@@ -21,11 +21,12 @@
 | [0064][0064] | 最小路径和                 | 中等 |   4:29    | 和上一题很像                                                   |
 | [0070][0070] | 爬楼梯                   | 简单 |   3:11    | 斐波那契                                                     |
 | [0072][0072] | 编辑距离                  | 中等 |   4:00    | ⚠️还是要练。经典二维数组动态规划。@see [0712][0712]、[1143][1143] 建议三道一起刷 |
+| [0078][0078] | 子集                    | 中等 |   8:33    | 用dfs递归做出来了,也可以用二进制做                                      |
 |              |                       |    |           |                                                          |
 | [0712][0712] | 两个字符串的最小ASCII删除和      | 中等 |   15:30   | ⚠️经典二维数组动态规划。@see [0072][0072]、[1143][1143]  建议三道一起刷     |
 | [1143][1143] | 最长公共子序列               | 中等 |   11:56   | 经典二维数组动态规划。@see [0072][0072]、[0712][0712]    建议三道一起刷     |
-| [0075][0075] | 颜色分类               | 中等 |   03:11   |                                                          |
-| [0075][0075] | 颜色分类               | 中等 |     ⚠️      | 计数法没问题, 双指针要练(p0、p1, else if)                            |
+| [0075][0075] | 颜色分类                  | 中等 |   03:11   |                                                          |
+| [0075][0075] | 颜色分类                  | 中等 |    ⚠️     | 计数法没问题, 双指针要练(p0、p1, else if)                            |
 
 [0001]: https://leetcode.cn/problems/two-sum/description/?envType=featured-list&envId=Fw9n57OM?envType=featured-list&envId=Fw9n57OM
 
@@ -73,7 +74,8 @@
 
 [0075]: https://leetcode.cn/problems/sort-colors/description/?envType=featured-list&envId=Fw9n57OM?envType=featured-list&envId=Fw9n57OM
 
-[0078]:
+[0078]: https://leetcode.cn/problems/subsets/description/?envType=featured-list&envId=Fw9n57OM?envType=featured-list&envId=Fw9n57OM
+
 [0094]:
 
 [0096]:
