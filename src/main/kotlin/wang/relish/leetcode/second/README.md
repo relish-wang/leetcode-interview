@@ -25,6 +25,7 @@
 | [0078][0078] | 子集                    | 中等 |   8:33    | 用dfs递归做出来了,也可以用二进制做                                      |
 | [0074][0094] | 二叉树的中序遍历              | 简单 |   3:47    |                                                          |
 | [0096][0096] | 不同的二叉搜索树              | 中等 |    ⚠️     | 卡特兰数                                                     |
+| [0098][0098] | 验证二叉搜索树               | 中等 |   37:36   | ⚠️ 简单的做法就是中序遍历。否则的话就要考虑清楚左右边界                            |
 |              |                       |    |           |                                                          |
 | [0712][0712] | 两个字符串的最小ASCII删除和      | 中等 |   15:30   | ⚠️经典二维数组动态规划。@see [0072][0072]、[1143][1143]  建议三道一起刷     |
 | [1143][1143] | 最长公共子序列               | 中等 |   11:56   | 经典二维数组动态规划。@see [0072][0072]、[0712][0712]    建议三道一起刷     |
@@ -81,7 +82,7 @@
 
 [0096]: https://leetcode.cn/problems/unique-binary-search-trees/description/?envType=featured-list&envId=Fw9n57OM?envType=featured-list&envId=Fw9n57OM
 
-[0098]:
+[0098]: https://leetcode.cn/problems/validate-binary-search-tree/description/?envType=featured-list&envId=Fw9n57OM?envType=featured-list&envId=Fw9n57OM
 
 [0101]:
 [0102]:
