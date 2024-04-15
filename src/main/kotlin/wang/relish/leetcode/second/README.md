@@ -23,7 +23,8 @@
 | [0072][0072] | 编辑距离                  | 中等 |   4:00    | ⚠️还是要练。经典二维数组动态规划。@see [0712][0712]、[1143][1143] 建议三道一起刷 |
 | [0075][0075] | 颜色分类                  | 中等 |    ⚠️     | 计数法没问题, 双指针要练(p0、p1, else if)                            |
 | [0078][0078] | 子集                    | 中等 |   8:33    | 用dfs递归做出来了,也可以用二进制做                                      |
-| [0078][0094] | 二叉树的中序遍历              | 简单 |   3:47    |                                                          |
+| [0074][0094] | 二叉树的中序遍历              | 简单 |   3:47    |                                                          |
+| [0096][0096] | 不同的二叉搜索树              | 中等 |    ⚠️     | 卡特兰数                                                     |
 |              |                       |    |           |                                                          |
 | [0712][0712] | 两个字符串的最小ASCII删除和      | 中等 |   15:30   | ⚠️经典二维数组动态规划。@see [0072][0072]、[1143][1143]  建议三道一起刷     |
 | [1143][1143] | 最长公共子序列               | 中等 |   11:56   | 经典二维数组动态规划。@see [0072][0072]、[0712][0712]    建议三道一起刷     |
@@ -78,7 +79,8 @@
 
 [0094]: https://leetcode.cn/problems/binary-tree-inorder-traversal/description/?envType=featured-list&envId=Fw9n57OM?envType=featured-list&envId=Fw9n57OM
 
-[0096]:
+[0096]: https://leetcode.cn/problems/unique-binary-search-trees/description/?envType=featured-list&envId=Fw9n57OM?envType=featured-list&envId=Fw9n57OM
+
 [0098]:
 
 [0101]:
