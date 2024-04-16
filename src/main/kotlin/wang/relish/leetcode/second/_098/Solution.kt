@@ -1,8 +1,8 @@
 package wang.relish.leetcode.second._098
 
 import struct.TreeNode
-import java.lang.Long.max
-import java.lang.Long.min
+import kotlin.math.max
+import kotlin.math.min
 
 /**
  * Example:
@@ -16,13 +16,13 @@ import java.lang.Long.min
  */
 class Solution {
     fun isValidBST(root: TreeNode?): Boolean {
-//        return preOrder(root, Long.MIN_VALUE, Long.MAX_VALUE) // 前序遍历解法
-//        return inOrder(root) // 中序遍历解法
-        return postOrder(root)[1]!= Long.MAX_VALUE // 后序遍历解法
+//        return preOrder(root, Long.MIN_VALUE, Long.MAX_VALUE)
+//        return inOrder(root)
+        return postOrder(root)[1] != Long.MAX_VALUE
     }
 
     /**
-     * 04:58
+     * 02:50
      */
     fun preOrder(root: TreeNode?, lower: Long, upper: Long): Boolean {
         if (root == null) return true
@@ -32,37 +32,37 @@ class Solution {
     }
 
 
-    var pre: Long? = null
+    var pre: Long = Long.MIN_VALUE
 
     /**
      * 中序遍历解法
-     * 04:00
+     * 02:10
      */
     fun inOrder(root: TreeNode?): Boolean {
         if (root == null) return true
-        if (inOrder(root.left).not()) return false
+        if (!inOrder(root.left)) return false
         val v = root.`val`.toLong()
-        if (pre == null) {
-            pre = v
-        } else {
-            if (v <= pre!!) {
-                return false
-            }
-            pre = v
-        }
+        if (v <= pre) return false
+        pre = v
         return inOrder(root.right)
     }
 
+    /**
+     * 后序遍历解法
+     * 4:05
+     */
     fun postOrder(root: TreeNode?): LongArray {
-        if (root == null) {
-            return longArrayOf(Long.MAX_VALUE, Long.MIN_VALUE)
-        }
-        val left = postOrder(root.left)
-        val right = postOrder(root.right)
+        if (root == null) return longArrayOf(Long.MAX_VALUE, Long.MIN_VALUE)
+        val l = postOrder(root.left)
+        val r = postOrder(root.right)
         val v = root.`val`.toLong()
-        if (v <= left[1] || v >= right[0]) return longArrayOf(Long.MIN_VALUE, Long.MAX_VALUE)
-        return longArrayOf(min(left[0], v), max(right[1], v))
+        if (v <= l[1] || v >= r[0]) return longArrayOf(Long.MIN_VALUE, Long.MAX_VALUE)
+        return longArrayOf(min(l[0], v), max(r[1], v))
     }
+
+    /**
+     * 层序遍历解法
+     */
 }
 
 fun main() {
