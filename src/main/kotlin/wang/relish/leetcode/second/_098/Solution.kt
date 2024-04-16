@@ -22,12 +22,13 @@ class Solution {
     }
 
     /**
-     * 02:50
+     * 前序遍历解法
+     * 02:28
      */
     fun preOrder(root: TreeNode?, lower: Long, upper: Long): Boolean {
         if (root == null) return true
         val v = root.`val`.toLong()
-        if (v !in lower + 1..<upper) return false
+        if (v <= lower || v >= upper) return false
         return preOrder(root.left, lower, v) && preOrder(root.right, v, upper)
     }
 
@@ -36,11 +37,11 @@ class Solution {
 
     /**
      * 中序遍历解法
-     * 02:10
+     * 01:38
      */
     fun inOrder(root: TreeNode?): Boolean {
         if (root == null) return true
-        if (!inOrder(root.left)) return false
+        if (inOrder(root.left).not()) return false
         val v = root.`val`.toLong()
         if (v <= pre) return false
         pre = v
@@ -49,7 +50,7 @@ class Solution {
 
     /**
      * 后序遍历解法
-     * 4:05
+     * 4:12
      */
     fun postOrder(root: TreeNode?): LongArray {
         if (root == null) return longArrayOf(Long.MAX_VALUE, Long.MIN_VALUE)
@@ -57,7 +58,7 @@ class Solution {
         val r = postOrder(root.right)
         val v = root.`val`.toLong()
         if (v <= l[1] || v >= r[0]) return longArrayOf(Long.MIN_VALUE, Long.MAX_VALUE)
-        return longArrayOf(min(l[0], v), max(r[1], v))
+        return longArrayOf(min(v, l[0]), max(v, r[1]))
     }
 
     /**
