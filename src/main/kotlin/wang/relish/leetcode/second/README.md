@@ -26,6 +26,7 @@
 | [0074][0094] | 二叉树的中序遍历              | 简单 |   3:47    |                                                          |
 | [0096][0096] | 不同的二叉搜索树              | 中等 |    ⚠️     | 卡特兰数, 动态规划                                               |
 | [0098][0098] | 验证二叉搜索树               | 中等 |   2:00    | 前序和中序可以在2分钟内解出来, 后序遍历解法全靠死记硬背(4分钟), 层序遍历没尝试              |
+| [0101][0101] | 对称二叉树                 | 简单 |   2:25    | 秒了                                                       |
 |              |                       |    |           |                                                          |
 | [0712][0712] | 两个字符串的最小ASCII删除和      | 中等 |   15:30   | ⚠️经典二维数组动态规划。@see [0072][0072]、[1143][1143]  建议三道一起刷     |
 | [1143][1143] | 最长公共子序列               | 中等 |   11:56   | 经典二维数组动态规划。@see [0072][0072]、[0712][0712]    建议三道一起刷     |
@@ -84,7 +85,8 @@
 
 [0098]: https://leetcode.cn/problems/validate-binary-search-tree/description/?envType=featured-list&envId=Fw9n57OM?envType=featured-list&envId=Fw9n57OM
 
-[0101]:
+[0101]: https://leetcode.cn/problems/symmetric-tree/description/?envType=featured-list&envId=Fw9n57OM?envType=featured-list&envId=Fw9n57OM
+
 [0102]:
 
 [0103]:
