@@ -32,6 +32,7 @@
 | [0103][0103] | 二叉树的锯齿形层序遍历           | 中等 |   9:04    | 秒了, addFirst/removeFirst/addLast/removeLast              |
 | [0104][0104] | 二叉树的最大深度              | 简单 |   0:51    | 递归秒了                                                     |
 | [0105][0105] | 从前序与中序遍历序列构造二叉树       | 中等 |   17:35   | ⚠️ 边界注意                                                  |
+| [0106][0106] | 从中序与后序遍历序列构造二叉树       | 中等 |   7:24    | 刷完上面那题秒了                                                 |
 |              |                       |    |           |                                                          |
 | [0712][0712] | 两个字符串的最小ASCII删除和      | 中等 |   15:30   | ⚠️经典二维数组动态规划。@see [0072][0072]、[1143][1143]  建议三道一起刷     |
 | [1143][1143] | 最长公共子序列               | 中等 |   11:56   | 经典二维数组动态规划。@see [0072][0072]、[0712][0712]    建议三道一起刷     |
@@ -102,7 +103,7 @@
 
 [0105]: https://leetcode.cn/problems/construct-binary-tree-from-preorder-and-inorder-traversal/description
 
-[0106]:
+[0106]: https://leetcode.cn/problems/construct-binary-tree-from-inorder-and-postorder-traversal/description
 
 [0109]:
 [0111]:
