@@ -17,37 +17,32 @@ class Solution {
 
     var ans = Int.MIN_VALUE
     fun maxPathSum(root: TreeNode?): Int {
-        root?.`val`?.let { ans = it }
         mps(root)
         return ans
     }
 
     fun mps(root: TreeNode?): Int {
-        if (root == null) {
-            return 0
-        }
-        val v = root.`val`
+        if (root == null) return 0
         val left = root.left
         val right = root.right
-        val maxl = mps(left)
-        val maxr = mps(right)
-        val l = maxl.takeIf { it != 0 } ?: Int.MIN_VALUE
-        val r = maxr.takeIf { it != 0 } ?: Int.MIN_VALUE
-        val lv = maxl + v
-        val vr = maxr + v
-        val lvr = maxl + v + maxr
-        val a = max(max(max(max(max(l, r), v), lv), vr), lvr)
-        ans = max(a, ans)
-//        println("【$ans】 a = $a, v = ${v}, l = $l, r = $r")
-        return max(v + max(maxl, maxr), v)
+        val v = root.`val`
+        val l = mps(left)
+        val r = mps(right)
+        val realL = l.takeIf { it != 0 } ?: Int.MIN_VALUE
+        val realR = r.takeIf { it != 0 } ?: Int.MIN_VALUE
+        ans = max(max(max(realL, realR), l + v + r), ans)
+        return max(max(l, r) + v, v).also {
+            ans = max(ans, it)
+        }
     }
 }
 
 fun main() {
 //    println(Solution().maxPathSum(TreeNode.createTestData("[-10,9,20,null,null,15,7]")?.also { it.print() })) // 42
-    println(
-        Solution().maxPathSum(
-            TreeNode.createTestData("[9,6,-3,null,null,-6,2,null,null,2,null,-6,-6,-6]")?.also { it.print() })
-    ) // 16
-    //println(Solution().maxPathSum(TreeNode.createTestData("[-10]")?.also { it.print() })) // -10
+//    println(
+//        Solution().maxPathSum(
+//            TreeNode.createTestData("[9,6,-3,null,null,-6,2,null,null,2,null,-6,-6,-6]")?.also { it.print() })
+//    ) // 16
+//    println(Solution().maxPathSum(TreeNode.createTestData("[-10]")?.also { it.print() })) // -10
+    println(Solution().maxPathSum(TreeNode.createTestData("[2,-1]")?.also { it.print() })) // -10
 }
