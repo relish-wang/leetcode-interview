@@ -22,18 +22,13 @@ class Solution {
     }
 
     fun mps(root: TreeNode?): Int {
-        if (root == null) return 0
-        val left = root.left
-        val right = root.right
-        val v = root.`val`
-        val l = mps(left)
-        val r = mps(right)
-        val realL = l.takeIf { it != 0 } ?: Int.MIN_VALUE
-        val realR = r.takeIf { it != 0 } ?: Int.MIN_VALUE
-        ans = max(max(max(realL, realR), l + v + r), ans)
-        return max(max(l, r) + v, v).also {
-            ans = max(ans, it)
+        if (root == null) {
+            return 0
         }
+        val l = mps(root.left).takeIf { it > 0 } ?: 0
+        val r = mps(root.right).takeIf { it > 0 } ?: 0
+        ans = max(l + root.`val` + r, ans)
+        return max(l, r) + root.`val`
     }
 }
 
