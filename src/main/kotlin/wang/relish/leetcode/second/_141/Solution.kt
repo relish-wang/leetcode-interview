@@ -16,7 +16,7 @@ class Solution {
     fun hasCycle(head: ListNode?): Boolean {
         var s = head
         var f = head
-        while (f != null) {
+        while (f?.next != null) {
             s = s?.next
             f = f?.next?.next
             if (s == f) {
