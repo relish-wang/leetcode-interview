@@ -13,29 +13,23 @@ import struct.ListNode
  */
 class Solution {
     fun mergeTwoLists(list1: ListNode?, list2: ListNode?): ListNode? {
-        if (list1 == null) {
-            return list2
-        }
-        if (list2 == null) {
-            return list1
-        }
-        var l1: ListNode? = list1
-        var l2: ListNode? = list2
-        val dummy = ListNode(0)
+        val dummy = ListNode(-1)
         var c = dummy
+        var l1 = list1
+        var l2 = list2
         while (l1 != null && l2 != null) {
             val v1 = l1.`val`
             val v2 = l2.`val`
             if (v1 < v2) {
                 c.next = l1
-                c = c.next!!
                 l1 = l1.next
             } else {
                 c.next = l2
-                c = c.next!!
                 l2 = l2.next
             }
+            c = c.next!!
         }
+        c.next = l1?:l2
         return dummy.next
     }
 }
