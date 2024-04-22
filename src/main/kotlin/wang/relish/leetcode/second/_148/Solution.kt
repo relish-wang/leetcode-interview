@@ -13,7 +13,7 @@ import struct.ListNode
  */
 class Solution {
     fun sortList(head: ListNode?): ListNode? {
-
+        return null
     }
 }
 
