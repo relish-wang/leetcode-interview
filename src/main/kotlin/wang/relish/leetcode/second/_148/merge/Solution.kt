@@ -7,63 +7,69 @@ import struct.ListNode
  */
 class Solution {
     /**
-     * 29:13
+     * 14: 08
      */
     fun sortList(head: ListNode?): ListNode? {
+        if (head?.next == null) return head
         val dummy = ListNode(0).apply { next = head }
-        val len = len(head)
+        val len = s(head)
         var subLen = 1
-
         while (subLen < len) {
-            var prev: ListNode? = dummy
-            var curr: ListNode? = dummy.next
-            while (curr != null) {
-                val h1 = curr
+            var c = dummy.next
+            var prev = dummy
+            while (c != null) {
                 var i = 1
-                while (i < subLen && curr != null && curr.next != null) {
-                    curr = curr.next
+                val h1 = c
+                while (i < subLen && c != null && c.next != null) {
+                    c = c.next
                     i++
                 }
-
-                val h2 = curr?.next
-                curr?.next = null // 断开
-                curr = h2
+                // cut
+                val h2 = c?.next
+                c?.next = null // 断开1
+                c = h2
                 var j = 1
-                while (j < subLen && curr != null && curr.next != null) {
-                    curr = curr.next
+                while (j < subLen && c != null && c.next != null) {
+                    c = c.next
                     j++
                 }
+                val next = c?.next // 剩下的
+                c?.next = null // 断开
 
-                val next = curr?.next
-                curr?.next = null
+                print("【$subLen】h1 = $h1, h2 = $h2")
+                val h = mr(h1, h2).also {
+                    println(", mr = $it")
+                }// 合并
 
-                val merged = merge(h1, h2)
-                prev?.next = merged
-                while (prev?.next != null) {
-                    prev = prev.next
+                prev.next = h
+                while (prev.next != null) {
+                    prev = prev.next!!
                 }
-                curr = next
+                prev.next = next
+                c = next
             }
+            println()
             subLen = subLen shl 1
         }
         return dummy.next
     }
 
-    fun len(head: ListNode?): Int {
-        var c = head
-        var co = 0
-        while (c != null) {
-            c = c.next
-            co++
+    fun s(h: ListNode?): Int {
+        if (h == null) return 0
+        var c = 0
+        var n = h
+        while (n != null) {
+            n = n.next
+            c++
         }
-        return co
+        return c
     }
 
-    fun merge(n1: ListNode?, n2: ListNode?): ListNode? {
-        var l1 = n1
-        var l2 = n2
+    fun mr(n1: ListNode?, n2: ListNode?): ListNode? {
         val d = ListNode(0)
         var c = d
+        var l1 = n1
+        var l2 = n2
         while (l1 != null && l2 != null) {
             if (l1.`val` < l2.`val`) {
                 c.next = l1
@@ -81,6 +87,6 @@ class Solution {
 
 fun main() {
     val head = ListNode.newInstance(intArrayOf(4, 19, 14, 5, -3, 1, 8, 5, 11, 15))
-    println(head)
-    println(Solution().sortList(head))
+    println("排序前: $head")
+    println("排序后: ${Solution().sortList(head)}")
 }

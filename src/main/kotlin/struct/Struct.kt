@@ -36,6 +36,28 @@ class ListNode @JvmOverloads constructor(
         }
     }
 
+    fun hasCycle(): Boolean {
+        val head = this
+        if (head == null) {
+            return false
+        }
+        var s = head
+        var f = head
+        while (s != null && f != null) {
+            s = s.next!!
+            f = f.next?.next ?: return false
+            if (s != null && s == f) {
+                return true
+            }
+        }
+        return false
+    }
+
+    fun detectCycle(): ListNode? {
+        return detectCycle(this)
+    }
+
+
     companion object {
 
 
@@ -85,6 +107,53 @@ class ListNode @JvmOverloads constructor(
                 }
             }
             return h
+        }
+
+        fun detectCycle(head: ListNode?): ListNode? {
+            if (head == null) {
+                return null
+            }
+            var s = head
+            var f = head
+            val stack = Stack<ListNode>()
+            val loopStack = Stack<ListNode>()
+            stack.push(s)
+            var hasCircle = false
+            while (s != null && f != null) {
+                s = s.next?.also {
+                    stack.push(it)
+                }
+                f = f.next?.next
+                if (f == null) {
+                    // no circle
+                    return null
+                }
+                if (s != null && s == f) {
+                    // has circle
+                    loopStack.push(s)
+                    //s = s.next
+                    hasCircle = true
+                    break
+
+                }
+            }
+            if (hasCircle.not()) {
+                return null
+            }
+            do {
+                s = s?.next
+                loopStack.push(s)
+            } while (stack.peek() != s)
+            var le: ListNode? = null
+            var ls: ListNode? = null
+            while (loopStack.isNotEmpty()) {
+                le = stack.pop()
+                ls = loopStack.pop()
+                if (le != ls) {
+                    return le.next
+                }
+            }
+            return ls
         }
     }
 }
