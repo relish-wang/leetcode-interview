@@ -1,54 +1,48 @@
 package wang.relish.leetcode.second._155
 
 import struct.ClassExecutor
-import java.util.*
+import kotlin.math.min
 
 class MinStack() {
 
-    val stack = Stack<Int>()
-    val sorted = mutableListOf<Int>()
+    var peek = Node(0)
+    var tail: Node? = null
+
+    init {
+        peek.next = tail
+    }
+
     fun push(`val`: Int) {
-        stack.push(`val`)
-        if (sorted.isEmpty()) {
-            sorted.add(`val`)
-            return
-        }
-        if (sorted[0] > `val`) {
-            sorted.add(0, `val`)
-            return
-        }
-        var add = false
-        for (i in 0 until sorted.size - 1) {
-            if (sorted[i] <= `val` && sorted[i + 1] >= `val`) {
-                sorted.add(i + 1, `val`)
-                add = true
-                break
+        val n = Node(`val`).apply {
+            min = peek.next?.min.let {
+                if (it == null) {
+                    `val`
+                } else {
+                    min(it, `val`)
+                }
             }
         }
-        if (add.not()) {
-            sorted.add(`val`)
-        }
+        val next = peek.next
+        peek.next = n
+        n.next = next
     }
 
     fun pop() {
-        val e = stack.pop()
-        val iterator = sorted.iterator()
-        while (iterator.hasNext()) {
-            if (iterator.next() == e) {
-                iterator.remove()
-                break
-            }
-        }
+        peek.next = peek.next?.next
     }
 
     fun top(): Int {
-        return stack.peek()
+        return peek.next!!.n
     }
 
     fun getMin(): Int {
-        return sorted.first()
+        return peek.next!!.min
     }
 
+    class Node(val n: Int) {
+        var min: Int = n
+        var next: Node? = null
+    }
 }
 
 /**
