@@ -14,7 +14,12 @@ import struct.TreeNode
  */
 class Solution {
     fun invertTree(root: TreeNode?): TreeNode? {
-        return null
+        if(root == null) return null
+        val l = root.left
+        val r = root.right
+        root.left = invertTree(r)
+        root.right = invertTree(l)
+        return root
     }
 }
 
