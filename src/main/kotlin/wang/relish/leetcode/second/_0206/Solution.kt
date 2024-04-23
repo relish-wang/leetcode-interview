@@ -14,9 +14,25 @@ import struct.ListNode
  */
 class Solution {
     /**
-     * 题目要求迭代和递归各来一种解法
+     * 题目要求迭代和【递归】各来一种解法
      */
     fun reverseList(head: ListNode?): ListNode? {
+        return next(null, head)
+    }
+
+    fun next(prev: ListNode?, curr: ListNode?): ListNode? {
+        if (curr == null) {
+            return prev
+        }
+        val next = curr.next
+        curr.next = prev
+        return next(curr, next)
+    }
+
+    /**
+     * 题目要求【迭代】和递归各来一种解法
+     */
+    fun reverseList1(head: ListNode?): ListNode? {
         var cur = head?.next
         var pre = head?.apply { next = null }
         while (cur != null) {
