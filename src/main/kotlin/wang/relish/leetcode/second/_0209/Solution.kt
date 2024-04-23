@@ -1,4 +1,4 @@
-package wang.relish.leetcode._0209
+package wang.relish.leetcode.second._0209
 
 import kotlin.math.min
 

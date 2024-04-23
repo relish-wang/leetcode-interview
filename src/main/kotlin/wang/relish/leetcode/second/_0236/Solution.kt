@@ -1,4 +1,4 @@
-package wang.relish.leetcode._0236
+package wang.relish.leetcode.second._0236
 
 import struct.TreeNode
 import struct.TreeNode.Companion.findChildTree

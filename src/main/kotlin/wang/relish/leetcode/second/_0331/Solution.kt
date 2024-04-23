@@ -1,4 +1,4 @@
-package wang.relish.leetcode._0331
+package wang.relish.leetcode.second._0331
 
 /**
  * https://leetcode.cn/problems/verify-preorder-serialization-of-a-binary-tree/?envType=featured-list&envId=Fw9n57OM?envType=featured-list&envId=Fw9n57OM

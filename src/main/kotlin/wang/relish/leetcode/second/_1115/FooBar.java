@@ -1,4 +1,4 @@
-package wang.relish.leetcode._1115;
+package wang.relish.leetcode.second._1115;
 /**
  * https://leetcode.cn/problems/print-foobar-alternately/solutions/542996/duo-xian-cheng-liu-mai-shen-jian-ni-xue-d220n/
  * 1 LinkedBlockingQueue

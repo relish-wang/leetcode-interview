@@ -1,4 +1,4 @@
-package wang.relish.leetcode._0287
+package wang.relish.leetcode.second._0287
 
 /**
  * @see _136.Solution

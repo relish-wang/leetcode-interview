@@ -1,4 +1,4 @@
-package wang.relish.leetcode._0617
+package wang.relish.leetcode.second._0617
 
 import struct.TreeNode
 

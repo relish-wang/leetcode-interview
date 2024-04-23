@@ -1,4 +1,4 @@
-package wang.relish.leetcode._0300
+package wang.relish.leetcode.second._0300
 
 /**
  * https://leetcode.cn/problems/longest-increasing-subsequence/?envType=featured-list&envId=Fw9n57OM?envType=featured-list&envId=Fw9n57OM

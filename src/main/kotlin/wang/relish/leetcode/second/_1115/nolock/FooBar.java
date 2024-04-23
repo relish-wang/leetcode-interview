@@ -1,4 +1,4 @@
-package wang.relish.leetcode._1115.nolock;
+package wang.relish.leetcode.second._1115.nolock;
 
 
 /**

@@ -1,4 +1,4 @@
-package wang.relish.leetcode._0482
+package wang.relish.leetcode.second._0482
 
 import struct.int2d
 import java.util.*

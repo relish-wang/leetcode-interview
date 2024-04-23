@@ -1,4 +1,4 @@
-package wang.relish.leetcode._0225
+package wang.relish.leetcode.second._0225
 
 /**
  * https://leetcode.cn/problems/implement-stack-using-queues/description/?envType=featured-list&envId=Fw9n57OM?envType=featured-list&envId=Fw9n57OM

@@ -1,4 +1,4 @@
-package wang.relish.leetcode._0695
+package wang.relish.leetcode.second._0695
 
 import struct.int2d
 import kotlin.math.max

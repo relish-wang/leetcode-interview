@@ -1,4 +1,4 @@
-package wang.relish.leetcode._0238
+package wang.relish.leetcode.second._0238
 
 class Solution {
     fun productExceptSelf(nums: IntArray): IntArray {

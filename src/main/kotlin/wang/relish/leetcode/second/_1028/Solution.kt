@@ -1,4 +1,4 @@
-package wang.relish.leetcode._1028
+package wang.relish.leetcode.second._1028
 
 import struct.TreeNode
 import java.util.Stack

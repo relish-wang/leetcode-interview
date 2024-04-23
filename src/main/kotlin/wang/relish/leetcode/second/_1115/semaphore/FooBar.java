@@ -1,4 +1,4 @@
-package wang.relish.leetcode._1115.semaphore;
+package wang.relish.leetcode.second._1115.semaphore;
 
 /**
  * https://leetcode.cn/problems/print-foobar-alternately/solutions/542996/duo-xian-cheng-liu-mai-shen-jian-ni-xue-d220n/?envType=featured-list&envId=Fw9n57OM?envType=featured-list&envId=Fw9n57OM

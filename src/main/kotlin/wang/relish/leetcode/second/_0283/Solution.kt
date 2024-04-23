@@ -1,4 +1,4 @@
-package wang.relish.leetcode._0283
+package wang.relish.leetcode.second._0283
 
 import java.util.*
 

@@ -1,4 +1,4 @@
-package wang.relish.leetcode._0448
+package wang.relish.leetcode.second._0448
 
 /**
  * https://leetcode.cn/problems/find-all-numbers-disappeared-in-an-array/?envType=featured-list&envId=Fw9n57OM?envType=featured-list&envId=Fw9n57OM

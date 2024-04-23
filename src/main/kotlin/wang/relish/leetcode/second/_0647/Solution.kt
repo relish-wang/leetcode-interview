@@ -1,4 +1,4 @@
-package wang.relish.leetcode._0647
+package wang.relish.leetcode.second._0647
 
 class Solution {
     /**
