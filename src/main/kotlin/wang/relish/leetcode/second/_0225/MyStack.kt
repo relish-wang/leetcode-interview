@@ -1,24 +1,32 @@
 package wang.relish.leetcode.second._0225
 
+import java.util.*
+
 /**
  * https://leetcode.cn/problems/implement-stack-using-queues/description/?envType=featured-list&envId=Fw9n57OM?envType=featured-list&envId=Fw9n57OM
  */
 class MyStack() {
 
+    val q = LinkedList<Int>()
 
     fun push(x: Int) {
+        val n = q.size
+        q.offer(x)
+        for (i in 0 until n) {
+            q.offer(q.poll())
+        }
     }
 
     fun pop(): Int {
-        return 0
+        return q.poll()
     }
 
     fun top(): Int {
-        return 0
+        return q.peek()
     }
 
     fun empty(): Boolean {
-        return false
+        return q.isEmpty()
     }
 }
 
