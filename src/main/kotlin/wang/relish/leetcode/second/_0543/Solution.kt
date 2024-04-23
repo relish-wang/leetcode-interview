@@ -1,4 +1,4 @@
-package wang.relish.leetcode.second._543
+package wang.relish.leetcode.second._0543
 
 import struct.TreeNode
 import kotlin.math.max
