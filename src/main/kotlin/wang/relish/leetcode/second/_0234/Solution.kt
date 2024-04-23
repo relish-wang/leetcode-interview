@@ -20,28 +20,29 @@ class Solution {
         var fast = head
         while (fast?.next?.next != null) {
             slow = slow?.next
-            fast = fast?.next?.next
+            fast = fast.next?.next
         }
-        var p1 = head
-        var p2 = reverse(slow?.next)
-        while (p2 != null) {
-            if (p1?.`val` != p2.`val`) {
+        var l2 = head
+        var l1 = reverse(slow?.next)
+        while (l1 != null) {
+            if (l1.`val` != l2?.`val`) {
                 return false
             }
-            p1 = p1.next
-            p2 = p2.next
+            l1 = l1.next
+            l2 = l2.next
         }
         return true
     }
 
     fun reverse(head: ListNode?): ListNode? {
+        if (head == null) return null
         var pre: ListNode? = null
         var cur = head
         while (cur != null) {
-            val t = cur.next
+            val next = cur.next
             cur.next = pre
             pre = cur
-            cur = t
+            cur = next
         }
         return pre
     }
