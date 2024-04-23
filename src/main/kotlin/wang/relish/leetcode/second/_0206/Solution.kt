@@ -17,10 +17,20 @@ class Solution {
      * 题目要求迭代和递归各来一种解法
      */
     fun reverseList(head: ListNode?): ListNode? {
-        return null
+        var cur = head?.next
+        var pre = head?.apply { next = null }
+        while (cur != null) {
+            val next = cur.next
+
+            cur.next = pre
+            pre = cur
+
+            cur = next
+        }
+        return pre
     }
 }
 
 fun main() {
-    println(Solution().reverseList(ListNode.newInstance(intArrayOf(1, 2, 3, 4, 5))))
+    println(Solution().reverseList(ListNode.newInstance(intArrayOf(1, 2, 3, 4, 5)))) // [5,4,3,2,1]
 }
