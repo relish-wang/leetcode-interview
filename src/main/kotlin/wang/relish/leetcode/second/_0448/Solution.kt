@@ -4,16 +4,23 @@ package wang.relish.leetcode.second._0448
  * https://leetcode.cn/problems/find-all-numbers-disappeared-in-an-array/?envType=featured-list&envId=Fw9n57OM?envType=featured-list&envId=Fw9n57OM
  */
 class Solution {
+
     /**
-     * 官解: 把对应位置的数减成负数, 最后看值大于0的下标+1就是答案
+     * 辣鸡解法, 时间和空间都拉胯
+     * 耗时: 7.69%
+     * 内存: 7.69%
      */
     fun findDisappearedNumbers(nums: IntArray): List<Int> {
-        return listOf()
+        val n = nums.size
+        val ans = IntArray(n) { it + 1 }.toMutableList()
+        for (num in nums) {
+            ans.remove(num)
+        }
+        return ans
     }
 }
 
 fun main() {
-//    println(Solution().findDisappearedNumbers(intArrayOf(4, 3, 2, 7, 8, 2, 3, 1)))
-//    println(Solution().findDisappearedNumbers(intArrayOf(1, 1)))
-    println(Solution().findDisappearedNumbers(intArrayOf(4, 3, 2, 7, 7, 2, 3, 1)))
+    println(Solution().findDisappearedNumbers(intArrayOf(4, 3, 2, 7, 8, 2, 3, 1))) // [5,6]
+    println(Solution().findDisappearedNumbers(intArrayOf(1, 1))) // [2]
 }
