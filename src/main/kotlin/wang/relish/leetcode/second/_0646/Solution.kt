@@ -4,12 +4,40 @@ import struct.int2d
 
 /**
  * https://leetcode.cn/problems/maximum-length-of-pair-chain/?envType=featured-list&envId=Fw9n57OM?envType=featured-list&envId=Fw9n57OM
- * @see _482.Solution
+ * @see wang.relish.leetcode.second._0452.Solution
  */
 class Solution {
     fun findLongestChain(pairs: Array<IntArray>): Int {
-        return 0
+        pairs.sortWith(object : Comparator<IntArray> {
+            override fun compare(p0: IntArray?, p1: IntArray?): Int {
+                p0 ?: return 0
+                p1 ?: return 0
+                return if (p0[1] > p1[1]) {
+                    1
+                } else if (p0[1] == p1[1]) {
+                    if (p0[0] > p1[0]) {
+                        1
+                    } else if (p0[0] == p1[0]) {
+                        0
+                    } else {
+                        -1
+                    }
+                } else {
+                    -1
+                }
+            }
+        })
+        var ans = 1
+        var t = pairs[0][1]
+        for (i in 1 until pairs.size) {
+            if (pairs[i].f(t)) continue
+            ans++
+            t = pairs[i][1]
+        }
+        return ans
     }
+
+    fun IntArray.f(i: Int): Boolean = i in this[0]..this[1]
 }
 
 fun main() {
