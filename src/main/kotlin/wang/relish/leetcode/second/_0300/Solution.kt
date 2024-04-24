@@ -1,11 +1,24 @@
 package wang.relish.leetcode.second._0300
 
+import kotlin.math.max
+
 /**
  * https://leetcode.cn/problems/longest-increasing-subsequence/?envType=featured-list&envId=Fw9n57OM?envType=featured-list&envId=Fw9n57OM
  */
 class Solution {
     fun lengthOfLIS(nums: IntArray): Int {
-        return 0
+        val n = nums.size
+        val dp = IntArray(n) { 1 }
+        var max = 1
+        for (i in 1 until n) {
+            for (j in 0 until i) {
+                if (nums[i] > nums[j]) {
+                    dp[i] = max(dp[i], dp[j] + 1)
+                }
+            }
+            max = max(max, dp[i])
+        }
+        return max
     }
 }
 
