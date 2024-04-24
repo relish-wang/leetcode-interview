@@ -1,7 +1,7 @@
 package wang.relish.leetcode.second._0287
 
 /**
- * @see _136.Solution
+ * @see wang.relish.leetcode.second._0136.Solution
  */
 class Solution {
     /**
@@ -15,9 +15,21 @@ class Solution {
      * 链表: 1 -> 4 -> 6 -> 3
      *                ↑    │
      *                └────┘
+     * 要求O(1)空间
      */
     fun findDuplicate(nums: IntArray): Int {
-        return 0
+        var slow = nums[0]
+        var fast = nums[nums[0]]
+        while (slow != fast) {
+            slow = nums[slow]
+            fast = nums[nums[fast]]
+        }
+        slow = 0
+        while (slow != fast) {
+            slow = nums[slow]
+            fast = nums[fast]
+        }
+        return slow
     }
 }
 
