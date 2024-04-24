@@ -14,17 +14,43 @@ import struct.ListNode
  */
 class Solution {
     fun oddEvenList(head: ListNode?): ListNode? {
-        return null
+        if (head == null) return null
+        val dummy = ListNode(0)
+        var cur = head
+        var lastOdd: ListNode? = dummy
+        var lastEven: ListNode? = null
+        var i = 1
+        while (cur != null) {
+            val next = cur.next
+            if (i % 2 == 0) {
+                if (lastEven == null) {
+                    lastOdd?.next = cur
+                    cur.next = null
+                    lastEven = lastOdd?.next
+                } else {
+                    val n = lastEven.next
+                    lastEven.next = cur
+                    cur.next = n
+                    lastEven = lastEven.next
+                }
+            } else {
+                val n = lastOdd?.next
+                lastOdd?.next = cur
+                cur.next = n
+                lastOdd = lastOdd?.next
+            }
+            cur = next
+            i++
+        }
+        return dummy.next
     }
 }
 
 fun main() {
-    println(
-        Solution().oddEvenList(
-            ListNode.newInstance(intArrayOf(1, 2, 3, 4, 5)).also { println(it?.toString()) })
-    ) // 1 3 5 2 4
-    println(
-        Solution().oddEvenList(
-            ListNode.newInstance(intArrayOf(2, 1, 3, 5, 6, 4, 7)).also { println(it?.toString()) })
-    ) // 2,3,6,7,1,5,4
+    runCase(intArrayOf(1, 2, 3, 4, 5)) // 1 3 5 2 4
+    runCase(intArrayOf(2, 1, 3, 5, 6, 4, 7)) // 2,3,6,7,1,5,4
+}
+
+private fun runCase(arr: IntArray) {
+    println("整理后: " + Solution().oddEvenList(ListNode.newInstance(arr).also { println("整理前: $it") }) + "\n")
 }
