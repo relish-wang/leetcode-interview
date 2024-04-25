@@ -1,5 +1,7 @@
 package wang.relish.leetcode.second._1115.semaphore;
 
+import java.util.concurrent.Semaphore;
+
 /**
  * https://leetcode.cn/problems/print-foobar-alternately/solutions/542996/duo-xian-cheng-liu-mai-shen-jian-ni-xue-d220n/?envType=featured-list&envId=Fw9n57OM?envType=featured-list&envId=Fw9n57OM
  * 1 LinkedBlockingQueue
@@ -13,6 +15,9 @@ package wang.relish.leetcode.second._1115.semaphore;
 class FooBar {
     private int n;
 
+    Semaphore foo = new Semaphore(1);
+    Semaphore bar = new Semaphore(0);
+
     public FooBar(int n) {
         this.n = n;
     }
@@ -20,14 +25,18 @@ class FooBar {
     public void foo(Runnable printFoo) throws InterruptedException {
 
         for (int i = 0; i < n; i++) {
+            foo.acquire();
             printFoo.run();
+            bar.release();
         }
     }
 
     public void bar(Runnable printBar) throws InterruptedException {
 
         for (int i = 0; i < n; i++) {
+            bar.acquire();
             printBar.run();
+            foo.release();
         }
     }
 
