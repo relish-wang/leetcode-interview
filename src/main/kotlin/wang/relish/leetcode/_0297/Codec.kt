@@ -14,15 +14,8 @@ import java.util.*
 
 class Codec() {
     // Encodes a URL to a shortened URL.
-    /**
-     * 层序遍历
-     */
     fun serialize(root: TreeNode?): String {
         return ""
-    }
-
-    private fun level(root: TreeNode?): MutableList<Int?> {
-        return mutableListOf()
     }
 
     // Decodes your encoded data to tree.

@@ -19,12 +19,10 @@ class Solution {
 }
 
 fun main() {
-    println(
-        Solution().oddEvenList(
-            ListNode.newInstance(intArrayOf(1, 2, 3, 4, 5)).also { println(it?.toString()) })
-    ) // 1 3 5 2 4
-    println(
-        Solution().oddEvenList(
-            ListNode.newInstance(intArrayOf(2, 1, 3, 5, 6, 4, 7)).also { println(it?.toString()) })
-    ) // 2,3,6,7,1,5,4
+    runCase(intArrayOf(1, 2, 3, 4, 5)) // 1 3 5 2 4
+    runCase(intArrayOf(2, 1, 3, 5, 6, 4, 7)) // 2,3,6,7,1,5,4
+}
+
+private fun runCase(arr: IntArray) {
+    println("整理后: " + Solution().oddEvenList(ListNode.newInstance(arr).also { println("整理前: $it") }) + "\n")
 }
