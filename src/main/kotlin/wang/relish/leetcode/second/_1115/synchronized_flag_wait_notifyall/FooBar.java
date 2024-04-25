@@ -17,15 +17,43 @@ class FooBar {
         this.n = n;
     }
 
+    volatile boolean flag = true;
+    final Object obj = new Object();
+
     public void foo(Runnable printFoo) throws InterruptedException {
+
         for (int i = 0; i < n; i++) {
-            printFoo.run();
+            synchronized (obj) {
+                try {
+                    if (!flag) obj.wait();
+
+                    // printFoo.run() outputs "foo". Do not change or remove this line.
+                    printFoo.run();
+
+                    flag = false;
+                } finally {
+                    obj.notifyAll();
+                }
+            }
         }
     }
 
     public void bar(Runnable printBar) throws InterruptedException {
+
         for (int i = 0; i < n; i++) {
-            printBar.run();
+            synchronized (obj) {
+                try {
+                    if (flag) obj.wait();
+
+                    // printBar.run() outputs "bar". Do not change or remove this line.
+                    printBar.run();
+
+                    flag = true;
+                } finally {
+                    obj.notifyAll();
+                }
+            }
+
         }
     }
 
