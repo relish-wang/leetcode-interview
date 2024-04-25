@@ -1,5 +1,8 @@
 package wang.relish.leetcode.second._1115.cyclicbarrier;
 
+import java.util.concurrent.BrokenBarrierException;
+import java.util.concurrent.CyclicBarrier;
+
 /**
  * https://leetcode.cn/problems/print-foobar-alternately/solutions/542996/duo-xian-cheng-liu-mai-shen-jian-ni-xue-d220n/?envType=featured-list&envId=Fw9n57OM?envType=featured-list&envId=Fw9n57OM
  * 1 LinkedBlockingQueue
@@ -17,12 +20,21 @@ class FooBar {
         this.n = n;
     }
 
+    CyclicBarrier cb = new CyclicBarrier(2);
+    volatile boolean flag = true;
+
     public void foo(Runnable printFoo) throws InterruptedException {
 
         for (int i = 0; i < n; i++) {
-
+            while (!flag) ;
             // printFoo.run() outputs "foo". Do not change or remove this line.
             printFoo.run();
+            flag = false;
+            try {
+                cb.await();
+            } catch (BrokenBarrierException e) {
+                throw new RuntimeException(e);
+            }
         }
     }
 
@@ -31,7 +43,14 @@ class FooBar {
         for (int i = 0; i < n; i++) {
 
             // printBar.run() outputs "bar". Do not change or remove this line.
+            while (flag) ;
             printBar.run();
+            flag = true;
+            try {
+                cb.await();
+            } catch (BrokenBarrierException e) {
+                throw new RuntimeException(e);
+            }
         }
     }
 
