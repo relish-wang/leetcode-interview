@@ -17,18 +17,25 @@ class FooBar {
         this.n = n;
     }
 
+    volatile boolean flag = true;
 
     public void foo(Runnable printFoo) throws InterruptedException {
 
         for (int i = 0; i < n; i++) {
+            while (!flag) ;
             printFoo.run();
+            flag = false;
+            Thread.yield();
         }
     }
 
     public void bar(Runnable printBar) throws InterruptedException {
 
         for (int i = 0; i < n; i++) {
+            while (flag) ;
             printBar.run();
+            flag = true;
+            Thread.yield();
         }
     }
 
