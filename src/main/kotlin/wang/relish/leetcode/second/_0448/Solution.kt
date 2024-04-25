@@ -6,11 +6,31 @@ package wang.relish.leetcode.second._0448
 class Solution {
 
     /**
+     * 正统解法: 先把nums[nums[i]-1]上的值-n, 再遍历nums, 值大于0的对应的index+1添加到ans里。
+     */
+    fun findDisappearedNumbers(nums: IntArray): List<Int> {
+        val n = nums.size
+        for (i in 0 until n) {
+            val index = nums[i].let { if (it > 0) it else it + n } - 1
+            if (nums[index] > 0) {
+                nums[index] -= n
+            }
+        }
+        val ans = mutableListOf<Int>()
+        for (i in 0 until n) {
+            if (nums[i] > 0) {
+                ans.add(i + 1)
+            }
+        }
+        return ans
+    }
+
+    /**
      * 辣鸡解法, 时间和空间都拉胯
      * 耗时: 7.69%
      * 内存: 7.69%
      */
-    fun findDisappearedNumbers(nums: IntArray): List<Int> {
+    fun findDisappearedNumbers1(nums: IntArray): List<Int> {
         val n = nums.size
         val ans = IntArray(n) { it + 1 }.toMutableList()
         for (num in nums) {
