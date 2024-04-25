@@ -1,6 +1,4 @@
-package wang.relish.leetcode._003
-
-import kotlin.math.max
+package wang.relish.leetcode._0003
 
 class Solution {
     fun lengthOfLongestSubstring(s: String): Int {
