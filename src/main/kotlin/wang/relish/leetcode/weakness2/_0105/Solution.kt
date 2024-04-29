@@ -16,10 +16,38 @@ import struct.TreeNode
  */
 class Solution {
     fun buildTree(preorder: IntArray, inorder: IntArray): TreeNode? {
-        return null
+        val n = preorder.size
+        if (n == 0) return null
+        return bt(preorder, inorder, 0, n - 1, 0, n - 1)
+    }
+
+    fun bt(preorder: IntArray, inorder: IntArray, preLeft: Int, preRight: Int, inLeft: Int, inRight: Int): TreeNode? {
+        val n = preorder.size
+        val range = 0..<n
+        if (preLeft > preRight || inLeft > inRight || preLeft !in range || preRight !in range || inLeft !in range || inRight !in range) return null
+        val rootValue = preorder[preLeft]
+        val root = TreeNode(rootValue)
+        val indexOfRootInInorder = inorder.indexOf(rootValue)
+        if (indexOfRootInInorder == -1) return root
+        val lenOfLeft = indexOfRootInInorder - inLeft - 1
+        root.left = bt(preorder, inorder, preLeft + 1, preLeft + 1 + lenOfLeft, inLeft, inLeft + lenOfLeft)
+        root.right = bt(preorder, inorder, preLeft + 1 + lenOfLeft + 1, preRight, indexOfRootInInorder + 1, inRight)
+        return root
     }
 }
 
 fun main() {
-    Solution().buildTree(intArrayOf(3, 9, 20, 15, 7), intArrayOf(9, 3, 15, 20, 7))?.print()
+    Solution().buildTree(intArrayOf(3, 9, 20, 15, 7), intArrayOf(9, 3, 15, 20, 7))?.print()/*
+                  #
+            7<
+                  #
+      20<
+                  #
+            15<
+                  #
+3<
+            #
+      9<
+            #
+*/
 }
