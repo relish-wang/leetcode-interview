@@ -26,7 +26,21 @@ import struct.TreeNode
  */
 class Solution {
     fun sortedListToBST(head: ListNode?): TreeNode? {
-        return null
+        if (head == null) return null
+        var slow = head
+        var fast = head.next?.next
+        var pre: ListNode? = null
+        do {
+            pre = slow
+            slow = slow?.next
+            fast = fast?.next?.next
+        } while (fast != null)
+        val rootValue = slow?.`val` ?: pre?.`val` ?: return null
+        val root = TreeNode(rootValue)
+        pre?.next = null
+        root.left = sortedListToBST(if (slow == null) null else head)
+        root.right = sortedListToBST(slow?.next)
+        return root
     }
 }
 
