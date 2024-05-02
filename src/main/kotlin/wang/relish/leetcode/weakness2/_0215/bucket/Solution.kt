@@ -1,39 +1,32 @@
-package wang.relish.leetcode.weakness2._0215
+package wang.relish.leetcode.weakness2._0215.bucket
+
+import java.util.PriorityQueue
 
 class Solution {
     /**
-     * 快排解法
+     * 桶排序
+     *
      * 1 <= k <= nums.length <= 105
      *
      * -10<sup>4</sup> <= nums\[i] <= 10<sup>4</sup>
      */
     fun findKthLargest(nums: IntArray, k: Int): Int {
-        return quickSelect(nums, k)
-    }
-
-    fun quickSelect(nums: IntArray, k: Int): Int {
-        if (nums.isEmpty()) return -1
-        if (nums.size == 1) return nums[0]
-        val below = mutableListOf<Int>()
-        val equal = mutableListOf<Int>()
-        val above = mutableListOf<Int>()
-        val standard = nums[0]
+        val b = IntArray(20001) { 0 }
         for (n in nums) {
-            if (n == standard) {
-                equal.add(n)
-            } else if (n > standard) {
-                above.add(n)
-            } else {
-                below.add(n)
+            b[n + 10000]++
+        }
+        var kk = k
+        var i = 20000
+        while (i >= 0) {
+            if (nums[i] > 0) {
+                kk -= nums[i]
+                if (kk <= 0) {
+                    return i - 10000
+                }
             }
+            i--
         }
-        return if (above.size >= k) {
-            quickSelect(above.toIntArray(), k)
-        } else if (above.size + equal.size >= k) {
-            standard
-        } else {
-            quickSelect(below.toIntArray(), k - above.size - equal.size)
-        }
+        return -1
     }
 }
 
