@@ -1,8 +1,32 @@
 package wang.relish.leetcode.weakness2._0215
 
+import java.util.PriorityQueue
+
 class Solution {
+    /**
+     * 桶排序
+     *
+     * 1 <= k <= nums.length <= 105
+     *
+     * -10<sup>4</sup> <= nums\[i] <= 10<sup>4</sup>
+     */
     fun findKthLargest(nums: IntArray, k: Int): Int {
-        return 0
+        val b = IntArray(20001) { 0 }
+        for (n in nums) {
+            b[n + 10000]++
+        }
+        var kk = k
+        var i = 20000
+        while (i >= 0) {
+            if (nums[i] > 0) {
+                kk -= nums[i]
+                if (kk <= 0) {
+                    return i - 10000
+                }
+            }
+            i--
+        }
+        return -1
     }
 }
 
