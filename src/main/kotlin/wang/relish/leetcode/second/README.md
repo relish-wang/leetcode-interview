@@ -81,6 +81,7 @@
 | [1028][1028]     | 从先序遍历还原二叉树            | 困难 |                            15:49                            | 正则(group+find)+stack 秒了。注意在合适的时机出栈                                                                                                                                         |
 | [1115][1115]     | 交替打印 FooBar           | 中等 | 08:02<br>07:51<br> ⚠️21:03<br>05:00<br> ⚠️04:33<br> ⚠️06:44 | BlockingQueue<br>synchronized+wait+notifyAll+flag<br>ReentrantLock+Condition+flag<br>Thread.yield()+flag<br>CyclicBarrier(2).await()+flag<br>Semaphore.acquire()/release() |
 | [1143][1143]     | 最长公共子序列               | 中等 |                            11:56                            | 经典二维数组动态规划。@see [0072][0072]、[0712][0712]    建议三道一起刷                                                                                                                       |
+| [2079][2079]     | 给植物浇水                 | 中等 |                            04:18                            | 过于简单                                                                                                                                                                       |
 | [2560][2560]     | 打家劫舍IV                | 中等 |                           ⚠️理解不了                            | 二分+dp 或 二分+贪心 @see[0189][0189]、[0213][0213]、[0337][0337]                                                                                                                   |
 | [LCR155][LCR155] | 将二叉搜索树转化为排序的双向链表      | 中等 |                            09:48                            | 二叉搜索树中序遍历秒了                                                                                                                                                                |
 
@@ -245,6 +246,8 @@
 [1115]: https://leetcode.cn/problems/print-foobar-alternately/description/
 
 [1143]: https://leetcode.cn/problems/longest-common-subsequence/description/
+
+[2079]: https://leetcode.cn/problems/watering-plants/description/
 
 [2560]: https://leetcode.cn/problems/house-robber-iv/description/
 
