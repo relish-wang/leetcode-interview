@@ -24,3 +24,11 @@ fun Array<IntArray>.printSquare() {
     }
     println()
 }
+
+fun maxValue(a: Int, vararg x: Int): Int {
+    var max = a
+    for (i in x) {
+        max = maxOf(max, i)
+    }
+    return max
+}

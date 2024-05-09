@@ -16,7 +16,9 @@
 | [0215][0215] | 数组中的第k个最大元素      | 中等 | 03:58<br>04:11<br>05:08 | 桶排序解法ok<br>快排<br>堆排序                              |
 | [0300][0300] | 最长递增子序列          | 中等 |          13:39          | 滑动窗口+二分                                           |
 | [0712][0712] | 两个字符串的最小ASCII删除和 | 中等 |          04:48          | dp\[i]\[j]                                        |
+| [0741][0741] | 摘樱桃              | 困难 |           ⚠️            | 动态规划, dp\[t]\[i]\[j]                              |
 | [0889][0889] | 根据前序和后序遍历构造二叉树   | 中等 |          14:00          | 加个indexMap可以提升效率                                  |
+| [1463][1463] | 摘樱桃II            | 困难 |           ⚠️            |                                                   |
 
 [0001]: https://leetcode.cn/problems/two-sum/description/
 
@@ -172,6 +174,8 @@
 
 [0712]: https://leetcode.cn/problems/minimum-ascii-delete-sum-for-two-strings/description/
 
+[0741]: https://leetcode.cn/problems/cherry-pickup/description/
+
 [0889]: https://leetcode.cn/problems/construct-binary-tree-from-preorder-and-postorder-traversal/
 
 [1028]: https://leetcode.cn/problems/recover-a-tree-from-preorder-traversal/description/
@@ -179,6 +183,8 @@
 [1115]: https://leetcode.cn/problems/print-foobar-alternately/description/
 
 [1143]: https://leetcode.cn/problems/longest-common-subsequence/description/
+
+[1463]: https://leetcode.cn/problems/cherry-pickup-ii/description/
 
 [2560]: https://leetcode.cn/problems/house-robber-iv/description/
 
