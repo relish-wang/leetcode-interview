@@ -1,4 +1,4 @@
-package wang.relish.leetcode._2079
+package wang.relish.leetcode.daily._2079
 
 class Solution {
     fun wateringPlants(plants: IntArray, capacity: Int): Int {
