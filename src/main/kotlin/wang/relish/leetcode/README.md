@@ -80,8 +80,9 @@
 | [1028][1028]     | 从先序遍历还原二叉树            | 困难 |    |                                                                            |
 | [1115][1115]     | 交替打印 FooBar           | 中等 |    |                                                                            |
 | [1143][1143]     | 最长公共子序列               | 中等 |    | @see [0072][0072]、[0712][0712]    建议三道一起刷                                  |
+| [2079][2079]     | 给植物浇水                 | 中等 |    |                                                                            |
 | [2560][2560]     | 打家劫舍IV                | 中等 |    | @see[0189][0189]、[0213][0213]、[0337][0337]                                 |
-| [LCR155][LCR155] | 将二叉搜索树转化为排序的双向链表      | 中等 |    |                                                                            |
+| [LCR115][LCR115] | 将二叉搜索树转化为排序的双向链表      | 中等 |    |                                                                            |
 
 [0001]: https://leetcode.cn/problems/two-sum/description/
 
@@ -244,6 +245,8 @@
 [1115]: https://leetcode.cn/problems/print-foobar-alternately/description/
 
 [1143]: https://leetcode.cn/problems/longest-common-subsequence/description/
+
+[2079]: https://leetcode.cn/problems/watering-plants/description/
 
 [2560]: https://leetcode.cn/problems/house-robber-iv/description/
 
