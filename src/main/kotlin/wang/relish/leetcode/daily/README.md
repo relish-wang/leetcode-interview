@@ -7,6 +7,7 @@
 | 240512 | [1553][1553] | 吃掉 N 个橘子的最少天数 | 困难 | 22:45 | ⚠️在看了题目提示的情况下写出来了。                              |
 | 240513 | [0994][0994] | 腐烂的橘子         | 中等 | 42:02 | ⚠️在看了提示使用队列后写出来了, 整体还有优化空间。而且想的时间太久了            |
 | 240514 | [2244][2244] | 完成所有任务需要的最少轮数 | 中等 | 08:05 | ⚠️虽然解出来了, 但不够优雅。应该用sum = (n+2)/3 // n是同值task的数量 |
+| 240515 | [2589][2589] | 完成所有任务的最少时间   | 困难 |  ⚠️   | ⚠️整了半个多小时, 完全做不出来                               |
 
 [0994]: https://leetcode.cn/problems/rotting-oranges/description/?envType=daily-question&envId=2024-05-13
 
@@ -19,5 +20,7 @@
 [2244]: https://leetcode.cn/problems/minimum-rounds-to-complete-all-tasks/description/
 
 [2391]: https://leetcode.cn/problems/minimum-amount-of-time-to-collect-garbage/
+
+[2589]: https://leetcode.cn/problems/minimum-time-to-complete-all-tasks/description/
 
 [2960]: https://leetcode.cn/problems/count-tested-devices-after-test-operations/description/
