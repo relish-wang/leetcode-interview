@@ -8,10 +8,13 @@
 | 240513 | [0994][0994] | 腐烂的橘子         | 中等 | 42:02 | ⚠️在看了提示使用队列后写出来了, 整体还有优化空间。而且想的时间太久了            |
 | 240514 | [2244][2244] | 完成所有任务需要的最少轮数 | 中等 | 08:05 | ⚠️虽然解出来了, 但不够优雅。应该用sum = (n+2)/3 // n是同值task的数量 |
 | 240515 | [2589][2589] | 完成所有任务的最少时间   | 困难 |  ⚠️   | ⚠️整了半个多小时, 完全做不出来                               |
+| 240516 | [1953][1953] | 你可以工作的最大周数    | 中等 |    | ⚠️ 看题解了。只跟最大值有关。                                |
 
 [0994]: https://leetcode.cn/problems/rotting-oranges/description/?envType=daily-question&envId=2024-05-13
 
 [1553]: https://leetcode.cn/problems/minimum-number-of-days-to-eat-n-oranges/description
+
+[1953]: https://leetcode.cn/problems/maximum-number-of-weeks-for-which-you-can-work/description/
 
 [2079]: https://leetcode.cn/problems/watering-plants/description/
 
