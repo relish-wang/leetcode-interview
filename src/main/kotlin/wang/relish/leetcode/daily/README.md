@@ -10,6 +10,7 @@
 | 240515 | [2589][2589] | 完成所有任务的最少时间   | 困难 |  ⚠️   | ⚠️整了半个多小时, 完全做不出来                               |
 | 240516 | [1953][1953] | 你可以工作的最大周数    | 中等 |       | ⚠️ 看题解了。只跟最大值有关。                                |
 | 240517 | [0826][0826] | 安排工作以达到最大收益   | 中等 |  ⚠️   | ⚠️ 看题解了 没想出来                                    |
+| 240518 | [2644][2644] | 找出可整除性得分最大的整数 | 中等 | 15:59 | 过于简单, 解了这么久纯粹是刚开始把除和被除搞反了                       |
 
 [0826]: https://leetcode.cn/problems/most-profit-assigning-work/description/
 
@@ -28,5 +29,7 @@
 [2391]: https://leetcode.cn/problems/minimum-amount-of-time-to-collect-garbage/
 
 [2589]: https://leetcode.cn/problems/minimum-time-to-complete-all-tasks/description/
+
+[2644]: https://leetcode.cn/problems/find-the-maximum-divisibility-score/description/
 
 [2960]: https://leetcode.cn/problems/count-tested-devices-after-test-operations/description/
