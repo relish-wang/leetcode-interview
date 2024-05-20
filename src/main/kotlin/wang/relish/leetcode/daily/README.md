@@ -12,12 +12,17 @@
 | 240517 | [0826][0826] | 安排工作以达到最大收益   | 中等 |  ⚠️   | ⚠️ 看题解了 没想出来                                    |
 | 240518 | [2644][2644] | 找出可整除性得分最大的整数 | 中等 | 15:59 | 过于简单, 解了这么久纯粹是刚开始把除和被除搞反了                       |
 | 240519 | [1535][1535] | 找出数组游戏的赢家     | 中等 | 10:08 | 过于简单, 看了题目提示很快想到了优化点(1809ms->379ms)             |
+| 240520 | [1542][1542] | 找出最长的超赞子字符串   | 困难 |  ⚠️   | 位运算弱项                                           |
+
+https://leetcode.cn/problems/find-longest-awesome-substring/description/
 
 [0826]: https://leetcode.cn/problems/most-profit-assigning-work/description/
 
 [0994]: https://leetcode.cn/problems/rotting-oranges/description/?envType=daily-question&envId=2024-05-13
 
 [1535]: https://leetcode.cn/problems/find-the-winner-of-an-array-game/description
+
+[1542]: https://leetcode.cn/problems/find-longest-awesome-substring/description/
 
 [1553]: https://leetcode.cn/problems/minimum-number-of-days-to-eat-n-oranges/description
 
