@@ -13,6 +13,7 @@
 | 240518 | [2644][2644] | 找出可整除性得分最大的整数 | 中等 | 15:59 | 过于简单, 解了这么久纯粹是刚开始把除和被除搞反了                       |
 | 240519 | [1535][1535] | 找出数组游戏的赢家     | 中等 | 10:08 | 过于简单, 看了题目提示很快想到了优化点(1809ms->379ms)             |
 | 240520 | [1542][1542] | 找出最长的超赞子字符串   | 困难 |  ⚠️   | 位运算弱项                                           |
+| 240521 | [2769][2769] | 找出最大的可达成数字   | 简单 | 03:43 | 简单得令人发指, 甚至都不想记录                                |
 
 https://leetcode.cn/problems/find-longest-awesome-substring/description/
 
@@ -39,5 +40,7 @@ https://leetcode.cn/problems/find-longest-awesome-substring/description/
 [2589]: https://leetcode.cn/problems/minimum-time-to-complete-all-tasks/description/
 
 [2644]: https://leetcode.cn/problems/find-the-maximum-divisibility-score/description/
+
+[2769]: https://leetcode.cn/problems/find-the-maximum-achievable-number/description
 
 [2960]: https://leetcode.cn/problems/count-tested-devices-after-test-operations/description/
