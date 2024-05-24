@@ -16,6 +16,7 @@
 | 240521 | [2769][2769] | 找出最大的可达成数字     | 简单 | 03:43 | 简单得令人发指, 甚至都不想记录                                |
 | 240522 | [2225][2225] | 找出输掉零场或一场比赛的玩家 | 中等 | 16:22 | 本来做题都做困了, 突然就AC了。一看题解, 跟我的解法一模一样。笑死。            |
 | 240523 | [2831][2831] | 找出最长等值子数组      | 中等 |  ⚠️   | 全程看题解, 又是自闭的一天                                  |
+| 240524 | [1673][1673] | 找出最具竞争力的子序列    | 中等 |  ⚠️   | 单调栈, 需要再练一练                                     |
 
 https://leetcode.cn/problems/find-longest-awesome-substring/description/
 
@@ -28,6 +29,8 @@ https://leetcode.cn/problems/find-longest-awesome-substring/description/
 [1542]: https://leetcode.cn/problems/find-longest-awesome-substring/description/
 
 [1553]: https://leetcode.cn/problems/minimum-number-of-days-to-eat-n-oranges/description
+
+[1673]: https://leetcode.cn/problems/find-the-most-competitive-subsequence/description/
 
 [1953]: https://leetcode.cn/problems/maximum-number-of-weeks-for-which-you-can-work/description/
 
