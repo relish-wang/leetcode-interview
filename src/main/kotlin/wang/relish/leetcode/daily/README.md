@@ -17,6 +17,7 @@
 | 240522 | [2225][2225] | 找出输掉零场或一场比赛的玩家 | 中等 | 16:22 | 本来做题都做困了, 突然就AC了。一看题解, 跟我的解法一模一样。笑死。            |
 | 240523 | [2831][2831] | 找出最长等值子数组      | 中等 |  ⚠️   | 全程看题解, 又是自闭的一天                                  |
 | 240524 | [1673][1673] | 找出最具竞争力的子序列    | 中等 |  ⚠️   | 单调栈, 需要再练一练                                     |
+| 240525 | [2903][2903] | 找出满足差值条件的下标 I  | 简单 | 2:56  | ⚠️  O(n^2)的解法很快写出来了; 但O(n)的解法还需要看题解。            |
 
 https://leetcode.cn/problems/find-longest-awesome-substring/description/
 
@@ -50,6 +51,9 @@ https://leetcode.cn/problems/find-longest-awesome-substring/description/
 
 [2769]: https://leetcode.cn/problems/find-the-maximum-achievable-number/description
 
+[2831]: https://leetcode.cn/problems/find-the-longest-equal-subarray/description/
+
+[2903]: https://leetcode.cn/problems/find-indices-with-index-and-value-difference-i/description/
+
 [2960]: https://leetcode.cn/problems/count-tested-devices-after-test-operations/description/
 
-[2831]: https://leetcode.cn/problems/find-the-longest-equal-subarray/description/
