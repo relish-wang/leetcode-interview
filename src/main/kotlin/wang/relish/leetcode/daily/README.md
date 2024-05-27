@@ -19,6 +19,7 @@
 | 240524 | [1673][1673] | 找出最具竞争力的子序列    | 中等 |  ⚠️   | 单调栈, 需要再练一练                                                   |
 | 240525 | [2903][2903] | 找出满足差值条件的下标 I  | 简单 | 2:56  | ⚠️  O(n^2)的解法很快写出来了; 但O(n)的解法还需要看题解。                          |
 | 240526 | [1738][1738] | 找出第 K 大的异或坐标值  | 中等 | 11:40 | ⚠️ 看了提示写出来了。二维前缀异或和。有点像DP。偷懒用了 PriorityQueue, 应该手写个快速选择或者堆排序。 |
+| 240527 | [2028][2028] | 找出缺失的观测数据      | 中等 | 08:18 | 应该算简单题才对                                                      |
 
 https://leetcode.cn/problems/find-longest-awesome-substring/description/
 
@@ -37,6 +38,8 @@ https://leetcode.cn/problems/find-longest-awesome-substring/description/
 [1738]: https://leetcode.cn/problems/find-kth-largest-xor-coordinate-value/description
 
 [1953]: https://leetcode.cn/problems/maximum-number-of-weeks-for-which-you-can-work/description/
+
+[2028]: https://leetcode.cn/problems/find-missing-observations/description/
 
 [2079]: https://leetcode.cn/problems/watering-plants/description/
 
