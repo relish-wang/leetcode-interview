@@ -20,6 +20,7 @@
 | 240525 | [2903][2903] | 找出满足差值条件的下标 I  | 简单 | 2:56  | ⚠️  O(n^2)的解法很快写出来了; 但O(n)的解法还需要看题解。                          |
 | 240526 | [1738][1738] | 找出第 K 大的异或坐标值  | 中等 | 11:40 | ⚠️ 看了提示写出来了。二维前缀异或和。有点像DP。偷懒用了 PriorityQueue, 应该手写个快速选择或者堆排序。 |
 | 240527 | [2028][2028] | 找出缺失的观测数据      | 中等 | 08:18 | 应该算简单题才对                                                      |
+| 240528 | [2951][2951] | 找出峰值           | 简单 | 02:52 | 过于简单                                                          |
 
 https://leetcode.cn/problems/find-longest-awesome-substring/description/
 
@@ -60,6 +61,8 @@ https://leetcode.cn/problems/find-longest-awesome-substring/description/
 [2831]: https://leetcode.cn/problems/find-the-longest-equal-subarray/description/
 
 [2903]: https://leetcode.cn/problems/find-indices-with-index-and-value-difference-i/description/
+
+[2951]: https://leetcode.cn/problems/find-the-peaks/description/
 
 [2960]: https://leetcode.cn/problems/count-tested-devices-after-test-operations/description/
 
