@@ -18,6 +18,7 @@
 | [0712][0712] | 两个字符串的最小ASCII删除和 | 中等 |          04:48          | dp\[i]\[j]                                        |
 | [0741][0741] | 摘樱桃              | 困难 |           ⚠️            | 动态规划, dp\[t]\[i]\[j]                              |
 | [0889][0889] | 根据前序和后序遍历构造二叉树   | 中等 |          14:00          | 加个indexMap可以提升效率                                  |
+| [1396][1396] | 设计地铁系统           | 中等 |          11:31          | 快手Android(20200407)一面原题。看了题目提示, 感觉比较简单。但是当时没做出来。  |
 | [1463][1463] | 摘樱桃II            | 困难 |           ⚠️            |                                                   |
 
 [0001]: https://leetcode.cn/problems/two-sum/description/
@@ -183,6 +184,8 @@
 [1115]: https://leetcode.cn/problems/print-foobar-alternately/description/
 
 [1143]: https://leetcode.cn/problems/longest-common-subsequence/description/
+
+[1396]: https://leetcode.cn/problems/design-underground-system/description/
 
 [1463]: https://leetcode.cn/problems/cherry-pickup-ii/description/
 
