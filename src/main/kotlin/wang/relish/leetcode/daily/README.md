@@ -23,6 +23,7 @@
 | 240528 | [2951][2951] | 找出峰值                 | 简单 | 02:52 | 过于简单。有个小优化点, 在判断出一个峰值后可以i+=2, 跳过下一个必定不是峰值的位置                  |
 | 240529 | [2981][2981] | 找出出现至少三次的最长特殊子字符串 I  | 中等 | 04:40 | 还算简单, hash表秒了                                                 |
 | 240530 | [2982][2982] | 找出出现至少三次的最长特殊子字符串 II | 中等 |  ⚠️   | 一模一样的题目, 今天的数量暴涨。暴力解法会超时。今天看了题解才过的。                           |
+| 240531 | [2965][2965] | 找出缺失和重复的数字           | 简单 | 07:02 | 简答题蠢办法能过。更极致的办法要用位运算或数学解法(二元一次方程)                             |
 
 https://leetcode.cn/problems/find-longest-awesome-substring/description/
 
@@ -67,6 +68,8 @@ https://leetcode.cn/problems/find-longest-awesome-substring/description/
 [2951]: https://leetcode.cn/problems/find-the-peaks/description/
 
 [2960]: https://leetcode.cn/problems/count-tested-devices-after-test-operations/description/
+
+[2965]: https://leetcode.cn/problems/find-missing-and-repeated-values/description/
 
 [2981]: https://leetcode.cn/problems/find-longest-special-substring-that-occurs-thrice-i/description/
 
