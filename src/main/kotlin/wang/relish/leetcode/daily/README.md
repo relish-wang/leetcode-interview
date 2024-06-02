@@ -25,8 +25,11 @@
 | 240530 | [2982][2982] | 找出出现至少三次的最长特殊子字符串 II | 中等 |  ⚠️   | 一模一样的题目, 今天的数量暴涨。暴力解法会超时。今天看了题解才过的。                           |
 | 240531 | [2965][2965] | 找出缺失和重复的数字           | 简单 | 07:02 | 简答题蠢办法能过。更极致的办法要用位运算或数学解法(二元一次方程)                             |
 | 240601 | [2928][2928] | 给小朋友们分糖果 I           | 简单 | 07:21 | 数学的容斥原理                                                       |
+| 240602 | [0575][0575] | 分糖果                  | 简单 | 02:01 | 秒了                                                            |
 
 https://leetcode.cn/problems/find-longest-awesome-substring/description/
+
+[0575]: https://leetcode.cn/problems/distribute-candies/description/
 
 [0826]: https://leetcode.cn/problems/most-profit-assigning-work/description/
 
