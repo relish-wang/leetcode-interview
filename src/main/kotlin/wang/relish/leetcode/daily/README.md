@@ -26,6 +26,7 @@
 | 240531 | [2965][2965] | 找出缺失和重复的数字           | 简单 | 07:02 | 简答题蠢办法能过。更极致的办法要用位运算或数学解法(二元一次方程)                             |
 | 240601 | [2928][2928] | 给小朋友们分糖果 I           | 简单 | 07:21 | 数学的容斥原理                                                       |
 | 240602 | [0575][0575] | 分糖果                  | 简单 | 02:01 | 秒了                                                            |
+| 240603 | [1103][1103] | 给小朋友们分糖果 II          | 简单 | 04:45 | 秒了                                                            |
 
 https://leetcode.cn/problems/find-longest-awesome-substring/description/
 
@@ -34,6 +35,8 @@ https://leetcode.cn/problems/find-longest-awesome-substring/description/
 [0826]: https://leetcode.cn/problems/most-profit-assigning-work/description/
 
 [0994]: https://leetcode.cn/problems/rotting-oranges/description/?envType=daily-question&envId=2024-05-13
+
+[1103]: https://leetcode.cn/problems/distribute-candies-to-people/description/
 
 [1535]: https://leetcode.cn/problems/find-the-winner-of-an-array-game/description
 
