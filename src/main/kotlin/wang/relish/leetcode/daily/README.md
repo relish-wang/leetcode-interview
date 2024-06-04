@@ -27,6 +27,7 @@
 | 240601 | [2928][2928] | 给小朋友们分糖果 I           | 简单 | 07:21 | 数学的容斥原理                                                       |
 | 240602 | [0575][0575] | 分糖果                  | 简单 | 02:01 | 秒了                                                            |
 | 240603 | [1103][1103] | 给小朋友们分糖果 II          | 简单 | 04:45 | 秒了                                                            |
+| 240604 | [3067][3067] | 在带权树网络中统计可连接服务器对数目   | 中等 |  ⚠️   | 题目理解了,但是dfs没写出来。看了灵神的题解后提交的。                                  |
 
 https://leetcode.cn/problems/find-longest-awesome-substring/description/
 
@@ -84,3 +85,4 @@ https://leetcode.cn/problems/find-longest-awesome-substring/description/
 
 [2982]: https://leetcode.cn/problems/find-longest-special-substring-that-occurs-thrice-ii/description/
 
+[3067]: https://leetcode.cn/problems/count-pairs-of-connectable-servers-in-a-weighted-tree-network/description/
