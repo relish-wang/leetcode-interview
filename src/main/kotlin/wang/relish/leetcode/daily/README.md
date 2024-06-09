@@ -30,8 +30,11 @@
 | 240604 | [3067][3067] | 在带权树网络中统计可连接服务器对数目   | 中等 |  ⚠️   | 题目理解了,但是dfs没写出来。看了灵神的题解后提交的。                                  |
 | 240607 | [3038][3038] | 相同分数的最大操作数目 I        | 简单 | 03:52 | 简单题, 秒了                                                       |
 | 240608 | [3040][3040] | 相同分数的最大操作数目 II       | 中等 |  ⚠️   | 感觉自己写的除了没有记忆化搜索外, 思路整体是对的, 缺卡在了547/549。而且还是WA, 太奇怪了。          |
+| 240609 | [0312][0312] | 戳气球                  | 困难 |  ⚠️   | 自己写的dfs, 没有做记忆化搜索。整体时间复杂度在O((n+2)!)。不愧是困难题, 超时了。              |
 
 https://leetcode.cn/problems/find-longest-awesome-substring/description/
+
+[0312]: https://leetcode.cn/problems/burst-balloons/description/
 
 [0575]: https://leetcode.cn/problems/distribute-candies/description/
 
