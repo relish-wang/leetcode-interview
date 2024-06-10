@@ -31,6 +31,7 @@
 | 240607 | [3038][3038] | 相同分数的最大操作数目 I        | 简单 | 03:52 | 简单题, 秒了                                                       |
 | 240608 | [3040][3040] | 相同分数的最大操作数目 II       | 中等 |  ⚠️   | 感觉自己写的除了没有记忆化搜索外, 思路整体是对的, 缺卡在了547/549。而且还是WA, 太奇怪了。          |
 | 240609 | [0312][0312] | 戳气球                  | 困难 |  ⚠️   | 自己写的dfs, 没有做记忆化搜索。整体时间复杂度在O((n+2)!)。不愧是困难题, 超时了。              |
+| 240610 | [0881][0881] | 救生艇                  | 中等 | 04:12 | 排序+双指针秒了                                                      |
 
 https://leetcode.cn/problems/find-longest-awesome-substring/description/
 
@@ -39,6 +40,8 @@ https://leetcode.cn/problems/find-longest-awesome-substring/description/
 [0575]: https://leetcode.cn/problems/distribute-candies/description/
 
 [0826]: https://leetcode.cn/problems/most-profit-assigning-work/description/
+
+[0881]: https://leetcode.cn/problems/boats-to-save-people/description/
 
 [0994]: https://leetcode.cn/problems/rotting-oranges/description/?envType=daily-question&envId=2024-05-13
 
