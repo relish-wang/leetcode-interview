@@ -34,6 +34,7 @@
 | 240610 | [0881][0881] | 救生艇                  | 中等 | 04:12 | 排序+双指针秒了                                                         |
 | 240611 | [0419][0419] | 甲板上的战舰               | 中等 | 04:01 | 甚至都不需要dfs。方向固定只需要判断(i,j)的左边(i-1,j)和上边(i,j-1)是不是X就行了。是的话加0, 否则加1。 |
 | 240612 | [2806][2806] | 取整购买后的账户余额           | 简单 | 02:52 | 秒了                                                               |
+| 240613 | [2813][2813] | 子序列最大优雅度             | 困难 |  ⚠️   | 以利润降序, 先直接塞k个, 看什么情况下才要移除前面的(以及移除签名哪一个),把后面的加进来(也有可能不加)。         |
 
 https://leetcode.cn/problems/find-longest-awesome-substring/description/
 
@@ -82,6 +83,8 @@ https://leetcode.cn/problems/find-longest-awesome-substring/description/
 [2769]: https://leetcode.cn/problems/find-the-maximum-achievable-number/description
 
 [2806]: https://leetcode.cn/problems/account-balance-after-rounded-purchase/description
+
+[2813]: https://leetcode.cn/problems/maximum-elegance-of-a-k-length-subsequence/description/
 
 [2831]: https://leetcode.cn/problems/find-the-longest-equal-subarray/description/
 
