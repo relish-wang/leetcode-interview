@@ -33,6 +33,7 @@
 | 240609 | [0312][0312] | 戳气球                  | 困难 |  ⚠️   | 自己写的dfs, 没有做记忆化搜索。整体时间复杂度在O((n+2)!)。不愧是困难题, 超时了。                 |
 | 240610 | [0881][0881] | 救生艇                  | 中等 | 04:12 | 排序+双指针秒了                                                         |
 | 240611 | [0419][0419] | 甲板上的战舰               | 中等 | 04:01 | 甚至都不需要dfs。方向固定只需要判断(i,j)的左边(i-1,j)和上边(i,j-1)是不是X就行了。是的话加0, 否则加1。 |
+| 240612 | [2806][2806] | 取整购买后的账户余额           | 简单 | 02:52 | 秒了                                                               |
 
 https://leetcode.cn/problems/find-longest-awesome-substring/description/
 
@@ -79,6 +80,8 @@ https://leetcode.cn/problems/find-longest-awesome-substring/description/
 [2644]: https://leetcode.cn/problems/find-the-maximum-divisibility-score/description/
 
 [2769]: https://leetcode.cn/problems/find-the-maximum-achievable-number/description
+
+[2806]: https://leetcode.cn/problems/account-balance-after-rounded-purchase/description
 
 [2831]: https://leetcode.cn/problems/find-the-longest-equal-subarray/description/
 
