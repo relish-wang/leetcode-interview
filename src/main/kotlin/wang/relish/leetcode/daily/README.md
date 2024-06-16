@@ -37,12 +37,15 @@
 | 240613 | [2813][2813] | 子序列最大优雅度             | 困难 |  ⚠️   | 以利润降序, 先直接塞k个, 看什么情况下才要移除前面的(以及移除签名哪一个),把后面的加进来(也有可能不加)。         |
 | 240614 | [2786][2786] | 访问数组中的位置使分数最大        | 中等 |  ⚠️   | 这不是基础的动态规划。要考虑奇偶性去简化时间复杂度。                                       |
 | 240615 | [2779][2779] | 数组的最大美丽值             | 中等 |  ⚠️   | 一个for加一个while, 滑动窗口基础题                                           |
+| 240616 | [0521][0521] | 最长特殊序列 Ⅰ             | 简单 | 03:51 | 秒了                                                               |
 
 https://leetcode.cn/problems/find-longest-awesome-substring/description/
 
 [0312]: https://leetcode.cn/problems/burst-balloons/description/
 
 [0419]: https://leetcode.cn/problems/battleships-in-a-board/description
+
+[0521]: https://leetcode.cn/problems/longest-uncommon-subsequence-i/description
 
 [0575]: https://leetcode.cn/problems/distribute-candies/description/
 
