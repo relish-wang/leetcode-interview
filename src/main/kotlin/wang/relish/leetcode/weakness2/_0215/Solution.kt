@@ -32,10 +32,10 @@ class Solution {
         }
     }
 
-    fun swap(nums: IntArray, l: Int, r: Int) {
-        val t = nums[l]
-        nums[l] = nums[r]
-        nums[r] = t
+    fun swap(nums: IntArray, left: Int, right: Int) {
+        nums[left] = nums[left] xor nums[right]
+        nums[right] = nums[right] xor nums[left]
+        nums[left] = nums[left] xor nums[right]
     }
 }
 

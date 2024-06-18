@@ -20,7 +20,7 @@ class Solution {
     }
 
     fun heapSort(nums: IntArray, index: Int, size: Int) {
-        val left = (index shl 1) + 1
+        val left = (index shl 1) + 1 // 左子树
         var s = index
         if (left < size && nums[left] > nums[s]) {
             s = left

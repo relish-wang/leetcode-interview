@@ -1,5 +1,7 @@
 package wang.relish.leetcode.daily._0521
 
+import kotlin.math.max
+
 class Solution {
     fun findLUSlength(a: String, b: String): Int {
         val l1 = a.length
