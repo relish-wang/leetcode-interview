@@ -39,6 +39,7 @@
 | 240615 | [2779][2779] | 数组的最大美丽值             | 中等 |  ⚠️   | 一个for加一个while, 滑动窗口基础题                                           |
 | 240616 | [0521][0521] | 最长特殊序列 Ⅰ             | 简单 | 03:51 | 秒了                                                               |
 | 240618 | [2288][2288] | 价格减免                 | 中等 | 24:54 | 被正则表达式折腾得够呛, 其实用split(" ")做起来最简单。因为题目限制了所有单词都是单个空格间隔             |
+| 240619 | [2713][2713] | 矩阵中严格递增的单元格数         | 困难 |  ⚠️   | 理解不了, 动态规划+优化                                                    |
 
 https://leetcode.cn/problems/find-longest-awesome-substring/description/
 
@@ -87,6 +88,8 @@ https://leetcode.cn/problems/find-longest-awesome-substring/description/
 [2589]: https://leetcode.cn/problems/minimum-time-to-complete-all-tasks/description/
 
 [2644]: https://leetcode.cn/problems/find-the-maximum-divisibility-score/description/
+
+[2713]: https://leetcode.cn/problems/maximum-strictly-increasing-cells-in-a-matrix/description/
 
 [2769]: https://leetcode.cn/problems/find-the-maximum-achievable-number/description
 
