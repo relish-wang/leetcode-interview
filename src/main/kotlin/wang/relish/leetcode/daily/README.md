@@ -42,6 +42,7 @@
 | 240619 | [2713][2713]   | 矩阵中严格递增的单元格数         | 困难 |  ⚠️   | 理解不了, 动态规划+优化                                                    |
 | 240620 | [2748][2748]   | 美丽下标对的数目             | 简单 | 28:44 | 题目看错了瞎做一通                                                        |
 | 240621 | [LCP61][LCP61] | 气温变化趋势               | 简单 | 05:48 | 秒                                                                |
+| 240622 | [2663][2663]   | 字典序最小的美丽字符串               | 困难 |  ⚠️   | cv大法                                                             |
 
 https://leetcode.cn/problems/find-longest-awesome-substring/description/
 
@@ -90,6 +91,8 @@ https://leetcode.cn/problems/find-longest-awesome-substring/description/
 [2589]: https://leetcode.cn/problems/minimum-time-to-complete-all-tasks/description/
 
 [2644]: https://leetcode.cn/problems/find-the-maximum-divisibility-score/description/
+
+[2663]: https://leetcode.cn/problems/lexicographically-smallest-beautiful-string/description/
 
 [2713]: https://leetcode.cn/problems/maximum-strictly-increasing-cells-in-a-matrix/description/
 
