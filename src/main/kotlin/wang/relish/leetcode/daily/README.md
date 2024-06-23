@@ -42,13 +42,16 @@
 | 240619 | [2713][2713]   | 矩阵中严格递增的单元格数         | 困难 |  ⚠️   | 理解不了, 动态规划+优化                                                    |
 | 240620 | [2748][2748]   | 美丽下标对的数目             | 简单 | 28:44 | 题目看错了瞎做一通                                                        |
 | 240621 | [LCP61][LCP61] | 气温变化趋势               | 简单 | 05:48 | 秒                                                                |
-| 240622 | [2663][2663]   | 字典序最小的美丽字符串               | 困难 |  ⚠️   | cv大法                                                             |
+| 240622 | [2663][2663]   | 字典序最小的美丽字符串          | 困难 |  ⚠️   | cv大法                                                             |
+| 240623 | [0520][0520]   | 检测大写字母               | 简单 | 04:05 | 正则秒 或 遍历大写字符的个数(0或n或1且首字母大写                                      |
 
 https://leetcode.cn/problems/find-longest-awesome-substring/description/
 
 [0312]: https://leetcode.cn/problems/burst-balloons/description/
 
 [0419]: https://leetcode.cn/problems/battleships-in-a-board/description
+
+[0520]: https://leetcode.cn/problems/detect-capital/description/
 
 [0521]: https://leetcode.cn/problems/longest-uncommon-subsequence-i/description
 
