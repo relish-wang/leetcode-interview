@@ -43,7 +43,8 @@
 | 240620 | [2748][2748]   | 美丽下标对的数目             | 简单 | 28:44 | 题目看错了瞎做一通                                                        |
 | 240621 | [LCP61][LCP61] | 气温变化趋势               | 简单 | 05:48 | 秒                                                                |
 | 240622 | [2663][2663]   | 字典序最小的美丽字符串          | 困难 |  ⚠️   | cv大法                                                             |
-| 240623 | [0520][0520]   | 检测大写字母               | 简单 | 04:05 | 正则秒 或 遍历大写字符的个数(0或n或1且首字母大写                                      |
+| 240623 | [0520][0520]   | 检测大写字母               | 简单 | 04:05 | 正则秒 或 遍历大写字符的个数(0或n或1且首字母大写)                                     |
+| 240624 | [0503][0503]   | 下一个更大元素 II           | 中等 | 07:38 | 虽然O(n^2)不会超时, 但还是用单调栈比较好。 @see [0739][0739]                      |
 
 https://leetcode.cn/problems/find-longest-awesome-substring/description/
 
@@ -51,11 +52,15 @@ https://leetcode.cn/problems/find-longest-awesome-substring/description/
 
 [0419]: https://leetcode.cn/problems/battleships-in-a-board/description
 
+[0503]: https://leetcode.cn/problems/next-greater-element-ii/description/
+
 [0520]: https://leetcode.cn/problems/detect-capital/description/
 
 [0521]: https://leetcode.cn/problems/longest-uncommon-subsequence-i/description
 
 [0575]: https://leetcode.cn/problems/distribute-candies/description/
+
+[0739]: https://leetcode.cn/problems/daily-temperatures/description/
 
 [0826]: https://leetcode.cn/problems/most-profit-assigning-work/description/
 
