@@ -45,6 +45,7 @@
 | 240622 | [2663][2663]   | 字典序最小的美丽字符串          | 困难 |  ⚠️   | cv大法                                                             |
 | 240623 | [0520][0520]   | 检测大写字母               | 简单 | 04:05 | 正则秒 或 遍历大写字符的个数(0或n或1且首字母大写)                                     |
 | 240624 | [0503][0503]   | 下一个更大元素 II           | 中等 | 07:38 | 虽然O(n^2)不会超时, 但还是用单调栈比较好。 @see [0739][0739]                      |
+| 240625 | [2732][2732]   | 找到矩阵中的好子集            | 困难 | 06:38 | 困难题秒了? 灵神解法比我的解法快一倍                                              |
 
 https://leetcode.cn/problems/find-longest-awesome-substring/description/
 
@@ -103,6 +104,8 @@ https://leetcode.cn/problems/find-longest-awesome-substring/description/
 [2663]: https://leetcode.cn/problems/lexicographically-smallest-beautiful-string/description/
 
 [2713]: https://leetcode.cn/problems/maximum-strictly-increasing-cells-in-a-matrix/description/
+
+[2732]: https://leetcode.cn/problems/find-a-good-subset-of-the-matrix/description/
 
 [2748]: https://leetcode.cn/problems/number-of-beautiful-pairs/description/
 
