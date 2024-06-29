@@ -47,6 +47,7 @@
 | 240624 | [0503][0503]   | 下一个更大元素 II           | 中等 | 07:38 | 虽然O(n^2)不会超时, 但还是用单调栈比较好。 @see [0739][0739]                      |
 | 240625 | [2732][2732]   | 找到矩阵中的好子集            | 困难 | 06:38 | 困难题秒了? 灵神解法比我的解法快一倍                                              |
 | 240627 | [2734][2734]   | 执行子串操作后的字典序最小字符串     | 中等 | 09:36 | 看懂题目, 秒了, 写法没那么优雅罢了(new String(s))                               |
+| 240629 | [2710][2710]   | 移除字符串中的尾随0           | 简单 | 02:02 | 简单                                                               |
 
 https://leetcode.cn/problems/find-longest-awesome-substring/description/
 
@@ -103,6 +104,8 @@ https://leetcode.cn/problems/find-longest-awesome-substring/description/
 [2644]: https://leetcode.cn/problems/find-the-maximum-divisibility-score/description/
 
 [2663]: https://leetcode.cn/problems/lexicographically-smallest-beautiful-string/description/
+
+[2710]: https://leetcode.cn/problems/remove-trailing-zeros-from-a-string/description/
 
 [2713]: https://leetcode.cn/problems/maximum-strictly-increasing-cells-in-a-matrix/description/
 
