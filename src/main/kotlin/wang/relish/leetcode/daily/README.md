@@ -49,6 +49,7 @@
 | 240627 | [2734][2734]   | 执行子串操作后的字典序最小字符串     | 中等 | 09:36 | 看懂题目, 秒了, 写法没那么优雅罢了(new String(s))                               |
 | 240629 | [2710][2710]   | 移除字符串中的尾随0           | 简单 | 02:02 | 简单                                                               |
 | 240630 | [0494][0494]   | 目标和                  | 中等 | 04:57 | 暴力kotlin可解, 其他语言可能超时(js), 可以改用回溯。更优解还是用01背包问题动态规划解。              |
+| 240702 | [3115][3115]   | 质数的最大距离              | 中等 | 10:09 | 数据量比较小, 暴力判断质数尚可, 还不会超时。                                         |
 
 https://leetcode.cn/problems/find-longest-awesome-substring/description/
 
@@ -147,5 +148,7 @@ https://leetcode.cn/problems/find-longest-awesome-substring/description/
 [3040]: https://leetcode.cn/problems/maximum-number-of-operations-with-the-same-score-ii/description
 
 [3067]: https://leetcode.cn/problems/count-pairs-of-connectable-servers-in-a-weighted-tree-network/description/
+
+[3115]: https://leetcode.cn/problems/maximum-prime-difference/description/
 
 [LCP61]: https://leetcode.cn/problems/6CE719/description/
