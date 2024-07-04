@@ -50,6 +50,7 @@
 | 240629 | [2710][2710]   | 移除字符串中的尾随0           | 简单 | 02:02 | 简单                                                               |
 | 240630 | [0494][0494]   | 目标和                  | 中等 | 04:57 | 暴力kotlin可解, 其他语言可能超时(js), 可以改用回溯。更优解还是用01背包问题动态规划解。              |
 | 240702 | [3115][3115]   | 质数的最大距离              | 中等 | 10:09 | 数据量比较小, 暴力判断质数尚可, 还不会超时。                                         |
+| 240703 | [3099][3099]   | 哈沙德数                 | 简单 | 03:04 | 简单                                                               |
 
 https://leetcode.cn/problems/find-longest-awesome-substring/description/
 
@@ -148,6 +149,8 @@ https://leetcode.cn/problems/find-longest-awesome-substring/description/
 [3040]: https://leetcode.cn/problems/maximum-number-of-operations-with-the-same-score-ii/description
 
 [3067]: https://leetcode.cn/problems/count-pairs-of-connectable-servers-in-a-weighted-tree-network/description/
+
+[3099]: https://leetcode.cn/problems/harshad-number/description/
 
 [3115]: https://leetcode.cn/problems/maximum-prime-difference/description/
 
