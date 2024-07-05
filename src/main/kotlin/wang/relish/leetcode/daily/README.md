@@ -51,6 +51,7 @@
 | 240630 | [0494][0494]   | 目标和                  | 中等 | 04:57 | 暴力kotlin可解, 其他语言可能超时(js), 可以改用回溯。更优解还是用01背包问题动态规划解。              |
 | 240702 | [3115][3115]   | 质数的最大距离              | 中等 | 10:09 | 数据量比较小, 暴力判断质数尚可, 还不会超时。                                         |
 | 240703 | [3099][3099]   | 哈沙德数                 | 简单 | 03:04 | 简单                                                               |
+| 240705 | [3033][3033]   | 修改矩阵                 | 简单 | 05:32 | 秒                                                                |
 
 https://leetcode.cn/problems/find-longest-awesome-substring/description/
 
@@ -143,6 +144,8 @@ https://leetcode.cn/problems/find-longest-awesome-substring/description/
 [2981]: https://leetcode.cn/problems/find-longest-special-substring-that-occurs-thrice-i/description/
 
 [2982]: https://leetcode.cn/problems/find-longest-special-substring-that-occurs-thrice-ii/description/
+
+[3033]: https://leetcode.cn/problems/modify-the-matrix/description/
 
 [3038]: https://leetcode.cn/problems/maximum-number-of-operations-with-the-same-score-i/description
 
