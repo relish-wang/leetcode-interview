@@ -52,6 +52,7 @@
 | 240702 | [3115][3115]   | 质数的最大距离              | 中等 | 10:09 | 数据量比较小, 暴力判断质数尚可, 还不会超时。                                         |
 | 240703 | [3099][3099]   | 哈沙德数                 | 简单 | 03:04 | 简单                                                               |
 | 240705 | [3033][3033]   | 修改矩阵                 | 简单 | 05:32 | 秒                                                                |
+| 240706 | [3101][3101]   | 交替子数组计数              | 中等 | 20:33 | 被Long卡脖子了                                                        |
 
 https://leetcode.cn/problems/find-longest-awesome-substring/description/
 
@@ -154,6 +155,8 @@ https://leetcode.cn/problems/find-longest-awesome-substring/description/
 [3067]: https://leetcode.cn/problems/count-pairs-of-connectable-servers-in-a-weighted-tree-network/description/
 
 [3099]: https://leetcode.cn/problems/harshad-number/description/
+
+[3101]: https://leetcode.cn/problems/count-alternating-subarrays/description/
 
 [3115]: https://leetcode.cn/problems/maximum-prime-difference/description/
 
