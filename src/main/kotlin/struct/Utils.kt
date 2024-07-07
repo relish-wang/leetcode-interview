@@ -15,6 +15,31 @@ fun int2d(raw: String): Array<IntArray> {
     }
 }
 
+fun char2d(raw: String): Array<CharArray> {
+    val arr = raw.substring(2, raw.length - 2).split(Regex("], *\\["))
+    val n = arr.size
+    return Array(n) { i ->
+        val s = arr[i]
+        if (s.isEmpty()) {
+            charArrayOf()
+        } else {
+            s.split(Regex(", *")).map {
+                it.replace("\"","")[0]
+            }.toCharArray()
+        }
+    }
+}
+
+fun Array<CharArray>.printSquare() {
+    for (i in indices) {
+        for (j in 0 until this[i].size) {
+            print(String.format("%3c ", this[i][j]))
+        }
+        println()
+    }
+    println()
+}
+
 fun Array<IntArray>.printSquare() {
     for (i in indices) {
         for (j in 0 until this[i].size) {

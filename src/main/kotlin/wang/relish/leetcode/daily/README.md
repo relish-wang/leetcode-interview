@@ -53,6 +53,7 @@
 | 240703 | [3099][3099]   | 哈沙德数                 | 简单 | 03:04 | 简单                                                               |
 | 240705 | [3033][3033]   | 修改矩阵                 | 简单 | 05:32 | 秒                                                                |
 | 240706 | [3101][3101]   | 交替子数组计数              | 中等 | 20:33 | 被Long卡脖子了                                                        |
+| 240707 | [1958][1958]   | 检查操作是否合法             | 中等 | 22:06 | 8个方向枚举了个遍写了100多行, 应该爸8个方向写个数组枚举出来(参考灵神题解)。                       |
 
 https://leetcode.cn/problems/find-longest-awesome-substring/description/
 
@@ -89,6 +90,8 @@ https://leetcode.cn/problems/find-longest-awesome-substring/description/
 [1738]: https://leetcode.cn/problems/find-kth-largest-xor-coordinate-value/description
 
 [1953]: https://leetcode.cn/problems/maximum-number-of-weeks-for-which-you-can-work/description/
+
+[1958]: https://leetcode.cn/problems/check-if-move-is-legal/description/
 
 [2028]: https://leetcode.cn/problems/find-missing-observations/description/
 
