@@ -55,6 +55,7 @@
 | 240706 | [3101][3101]   | 交替子数组计数              | 中等 | 20:33 | 被Long卡脖子了                                                        |
 | 240707 | [1958][1958]   | 检查操作是否合法             | 中等 | 22:06 | 8个方向枚举了个遍写了100多行, 应该爸8个方向写个数组枚举出来(参考灵神题解)。                       |
 | 240708 | [0724][0724]   | 寻找数组的中心下标            | 简单 | 04:04 | 秒                                                                |
+| 240710 | [2970][2970]   | 统计移除递增子数组的数目 I       | 简单 | 08:21 | 暴力O(n^3)可解。最优解还是灵神的滑动窗口(双指针)的O(n)解法                              |
 
 https://leetcode.cn/problems/find-longest-awesome-substring/description/
 
@@ -69,6 +70,8 @@ https://leetcode.cn/problems/find-longest-awesome-substring/description/
 [0521]: https://leetcode.cn/problems/longest-uncommon-subsequence-i/description
 
 [0575]: https://leetcode.cn/problems/distribute-candies/description/
+
+[0724]: https://leetcode.cn/problems/find-pivot-index/description/
 
 [0739]: https://leetcode.cn/problems/daily-temperatures/description/
 
@@ -145,6 +148,8 @@ https://leetcode.cn/problems/find-longest-awesome-substring/description/
 [2960]: https://leetcode.cn/problems/count-tested-devices-after-test-operations/description/
 
 [2965]: https://leetcode.cn/problems/find-missing-and-repeated-values/description/
+
+[2970]: https://leetcode.cn/problems/count-the-number-of-incremovable-subarrays-i/description/
 
 [2981]: https://leetcode.cn/problems/find-longest-special-substring-that-occurs-thrice-i/description/
 
