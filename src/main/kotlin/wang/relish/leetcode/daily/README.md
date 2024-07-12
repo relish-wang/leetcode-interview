@@ -57,6 +57,7 @@
 | 240708 | [0724][0724]   | 寻找数组的中心下标            | 简单 |  04:04   | 秒                                                                |
 | 240710 | [2970][2970]   | 统计移除递增子数组的数目 I       | 简单 |  08:21   | 暴力O(n^3)可解。最优解还是灵神的滑动窗口(双指针)的O(n)解法                              |
 | 240711 | [2972][2972]   | 统计移除递增子数组的数目 II      | 困难 | 05:57 ⚠️ | 昨天那题的大数据case版本, 暴力解不了, 最优解还是灵神的滑动窗口(双指针)的O(n)解法                  |
+| 240712 | [2974][2974]   | 最小数字游戏               | 简单 |  14:24   | 蠢办法也能过。简单解法就是先排序, 再每俩个交换位置                                       |
 
 https://leetcode.cn/problems/find-longest-awesome-substring/description/
 
@@ -153,6 +154,8 @@ https://leetcode.cn/problems/find-longest-awesome-substring/description/
 [2970]: https://leetcode.cn/problems/count-the-number-of-incremovable-subarrays-i/description/
 
 [2972]: https://leetcode.cn/problems/count-the-number-of-incremovable-subarrays-ii/description/
+
+[2974]: https://leetcode.cn/problems/minimum-number-game/description/
 
 [2981]: https://leetcode.cn/problems/find-longest-special-substring-that-occurs-thrice-i/description/
 
