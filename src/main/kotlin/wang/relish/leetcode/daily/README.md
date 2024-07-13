@@ -58,6 +58,7 @@
 | 240710 | [2970][2970]   | 统计移除递增子数组的数目 I       | 简单 |  08:21   | 暴力O(n^3)可解。最优解还是灵神的滑动窗口(双指针)的O(n)解法                              |
 | 240711 | [2972][2972]   | 统计移除递增子数组的数目 II      | 困难 | 05:57 ⚠️ | 昨天那题的大数据case版本, 暴力解不了, 最优解还是灵神的滑动窗口(双指针)的O(n)解法                  |
 | 240712 | [2974][2974]   | 最小数字游戏               | 简单 |  14:24   | 蠢办法也能过。简单解法就是先排序, 再每俩个交换位置                                       |
+| 240713 | [3011][3011]   | 判断一个数组是否可以变为有序               | 中等 |  04:44   | 冒泡秒了                                                             |
 
 https://leetcode.cn/problems/find-longest-awesome-substring/description/
 
@@ -160,6 +161,8 @@ https://leetcode.cn/problems/find-longest-awesome-substring/description/
 [2981]: https://leetcode.cn/problems/find-longest-special-substring-that-occurs-thrice-i/description/
 
 [2982]: https://leetcode.cn/problems/find-longest-special-substring-that-occurs-thrice-ii/description/
+
+[3011]: https://leetcode.cn/problems/find-if-array-can-be-sorted/description
 
 [3033]: https://leetcode.cn/problems/modify-the-matrix/description/
 
