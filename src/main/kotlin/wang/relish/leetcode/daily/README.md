@@ -58,7 +58,8 @@
 | 240710 | [2970][2970]   | 统计移除递增子数组的数目 I       | 简单 |  08:21   | 暴力O(n^3)可解。最优解还是灵神的滑动窗口(双指针)的O(n)解法                              |
 | 240711 | [2972][2972]   | 统计移除递增子数组的数目 II      | 困难 | 05:57 ⚠️ | 昨天那题的大数据case版本, 暴力解不了, 最优解还是灵神的滑动窗口(双指针)的O(n)解法                  |
 | 240712 | [2974][2974]   | 最小数字游戏               | 简单 |  14:24   | 蠢办法也能过。简单解法就是先排序, 再每俩个交换位置                                       |
-| 240713 | [3011][3011]   | 判断一个数组是否可以变为有序               | 中等 |  04:44   | 冒泡秒了                                                             |
+| 240713 | [3011][3011]   | 判断一个数组是否可以变为有序       | 中等 |  04:44   | 冒泡秒了                                                             |
+| 240714 | [0807][0807]   | 保持城市天际线              | 中等 |  05:43   | 所在行最大值和所在列最大值的较小值减去当前值累加即可                                       |
 
 https://leetcode.cn/problems/find-longest-awesome-substring/description/
 
@@ -77,6 +78,8 @@ https://leetcode.cn/problems/find-longest-awesome-substring/description/
 [0724]: https://leetcode.cn/problems/find-pivot-index/description/
 
 [0739]: https://leetcode.cn/problems/daily-temperatures/description/
+
+[0807]: https://leetcode.cn/problems/max-increase-to-keep-city-skyline/description/
 
 [0826]: https://leetcode.cn/problems/most-profit-assigning-work/description/
 
