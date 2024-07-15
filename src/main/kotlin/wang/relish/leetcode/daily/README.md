@@ -60,6 +60,7 @@
 | 240712 | [2974][2974]   | 最小数字游戏               | 简单 |  14:24   | 蠢办法也能过。简单解法就是先排序, 再每俩个交换位置                                       |
 | 240713 | [3011][3011]   | 判断一个数组是否可以变为有序       | 中等 |  04:44   | 冒泡秒了                                                             |
 | 240714 | [0807][0807]   | 保持城市天际线              | 中等 |  05:43   | 所在行最大值和所在列最大值的较小值减去当前值累加即可                                       |
+| 240715 | [0721][0721]   | 账户合并                 | 中等 |    ⚠️    | cv大法。并查集怎么做？                                                     |
 
 https://leetcode.cn/problems/find-longest-awesome-substring/description/
 
@@ -74,6 +75,8 @@ https://leetcode.cn/problems/find-longest-awesome-substring/description/
 [0521]: https://leetcode.cn/problems/longest-uncommon-subsequence-i/description
 
 [0575]: https://leetcode.cn/problems/distribute-candies/description/
+
+[0721]: https://leetcode.cn/problems/accounts-merge/description/
 
 [0724]: https://leetcode.cn/problems/find-pivot-index/description/
 
