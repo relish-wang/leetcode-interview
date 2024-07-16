@@ -61,6 +61,7 @@
 | 240713 | [3011][3011]   | 判断一个数组是否可以变为有序       | 中等 |  04:44   | 冒泡秒了                                                             |
 | 240714 | [0807][0807]   | 保持城市天际线              | 中等 |  05:43   | 所在行最大值和所在列最大值的较小值减去当前值累加即可                                       |
 | 240715 | [0721][0721]   | 账户合并                 | 中等 |    ⚠️    | cv大法。并查集怎么做？                                                     |
+| 240716 | [2956][2956]   | 找到两个数组中的公共元素         | 简单 |    ⚠️    | 题目没看懂                                                            |
 
 https://leetcode.cn/problems/find-longest-awesome-substring/description/
 
@@ -153,6 +154,8 @@ https://leetcode.cn/problems/find-longest-awesome-substring/description/
 [2928]: https://leetcode.cn/problems/distribute-candies-among-children-i/description/
 
 [2951]: https://leetcode.cn/problems/find-the-peaks/description/
+
+[2956]: https://leetcode.cn/problems/find-common-elements-between-two-arrays/description/
 
 [2960]: https://leetcode.cn/problems/count-tested-devices-after-test-operations/description/
 
