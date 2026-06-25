@@ -6,6 +6,7 @@ class ListNode @JvmOverloads constructor(
     var `val`: Int,
 ) {
     var isLoopNode: Boolean = false
+    @JvmField
     var next: ListNode? = null
     override fun toString(): String {
         val r = mutableListOf<Int>()
