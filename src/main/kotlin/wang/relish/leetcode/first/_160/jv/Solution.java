@@ -35,6 +35,18 @@ public class Solution {
      */
     public ListNode getIntersectionNode(ListNode headA, ListNode headB) {
         // TODO: 请在此实现你的算法
+        ListNode tem=headA;
+        while(headA.next!=null&&headB.next!=null) {
+            headA = headA.next;
+            headB = headB.next.next;
+            if (headA == headB) {
+                headB = tem;
+                while (headA.next != null && headB.next != null) {
+                    headA = headA.next;
+                    headB = headB.next;
+                }
+            }
+        }
         return null;
     }
 
