@@ -14,9 +14,11 @@ package wang.relish.leetcode.first._160.jv;
  * 示例 2：listA = [1,9,1,2,4], listB = [3,2,4],       skipA = 3, skipB = 1 -> Intersected at '2'
  * 示例 3：listA = [2,6,4],     listB = [1,5],          不相交                 -> No intersection
  */
-public class Solution {
+public class Main {
 
-    /** 单链表节点定义 */
+    /**
+     * 单链表节点定义
+     */
     public static class ListNode {
         int val;
         ListNode next;
@@ -35,18 +37,6 @@ public class Solution {
      */
     public ListNode getIntersectionNode(ListNode headA, ListNode headB) {
         // TODO: 请在此实现你的算法
-        ListNode tem=headA;
-        while(headA.next!=null&&headB.next!=null) {
-            headA = headA.next;
-            headB = headB.next.next;
-            if (headA == headB) {
-                headB = tem;
-                while (headA.next != null && headB.next != null) {
-                    headA = headA.next;
-                    headB = headB.next;
-                }
-            }
-        }
         return null;
     }
 
@@ -109,7 +99,7 @@ public class Solution {
     }
 
     public static void main(String[] args) {
-        Solution solution = new Solution();
+        Main solution = new Main();
 
         // 示例 1：期望输出 Intersected at '8'
         ListNode[] case1 = buildIntersection(8, new int[]{4, 1, 8, 4, 5}, new int[]{5, 6, 1, 8, 4, 5}, 2, 3);
